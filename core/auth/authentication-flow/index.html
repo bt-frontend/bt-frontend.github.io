@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://bt-frontend.github.io/micro-frontends/introduction/">
+        <link rel="canonical" href="https://bt-frontend.github.io/core/auth/authentication-flow/">
       
       
-        <link rel="prev" href="../../core/tech-debt/tech-debt/">
+        <link rel="prev" href="../../error-handling/api-error-handling/">
       
       
-        <link rel="next" href="../module-federation/">
+        <link rel="next" href="../protected-routes/">
       
       
-      <link rel="icon" href="../../assets/logo/favicon.png">
+      <link rel="icon" href="../../../assets/logo/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
-        <title>Introduction - Modern Frontend Documentation</title>
+        <title>Authentication Flow - Modern Frontend Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#micro-frontends-introduction" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -90,9 +90,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Modern Frontend Documentation" class="md-header__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
+    <a href="../../.." title="Modern Frontend Documentation" class="md-header__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
       
-  <img src="../../assets/logo/frontend.png" alt="logo">
+  <img src="../../../assets/logo/frontend.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Authentication Flow
             
           </span>
         </div>
@@ -210,28 +210,10 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../blog/" class="md-tabs__link">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   Blog
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../core/intro/" class="md-tabs__link">
-          
-  
-  Core
 
         </a>
       </li>
@@ -248,7 +230,25 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../../intro/" class="md-tabs__link">
+          
+  
+  Core
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../micro-frontends/introduction/" class="md-tabs__link">
           
   
   Micro Frontends
@@ -266,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../i18n/setup/" class="md-tabs__link">
+        <a href="../../../i18n/setup/" class="md-tabs__link">
           
   
   Internationalization (i18n)
@@ -284,7 +284,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../deployment/ci-cd/" class="md-tabs__link">
+        <a href="../../../deployment/ci-cd/" class="md-tabs__link">
           
   
   Deployment
@@ -323,9 +323,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Modern Frontend Documentation" class="md-nav__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
+    <a href="../../.." title="Modern Frontend Documentation" class="md-nav__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
       
-  <img src="../../assets/logo/frontend.png" alt="logo">
+  <img src="../../../assets/logo/frontend.png" alt="logo">
 
     </a>
     Modern Frontend Documentation
@@ -380,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/" class="md-nav__link">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -401,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,23 +426,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -453,7 +458,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Core
@@ -467,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/intro/" class="md-nav__link">
+      <a href="../../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -526,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/guidelines/naming-conventions/" class="md-nav__link">
+      <a href="../../guidelines/naming-conventions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -547,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/guidelines/linting-formatting/" class="md-nav__link">
+      <a href="../../guidelines/linting-formatting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -568,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/guidelines/file-structure/" class="md-nav__link">
+      <a href="../../guidelines/file-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -635,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/accessibility/best-practices/" class="md-nav__link">
+      <a href="../../accessibility/best-practices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -656,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/accessibility/testing/" class="md-nav__link">
+      <a href="../../accessibility/testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/error-handling/global-error-boundaries/" class="md-nav__link">
+      <a href="../../error-handling/global-error-boundaries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -744,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/error-handling/api-error-handling/" class="md-nav__link">
+      <a href="../../error-handling/api-error-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -770,6 +775,8 @@
                 
   
   
+    
+  
   
   
     
@@ -779,11 +786,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -797,7 +804,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             Authentication & Authorization
@@ -808,10 +815,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../core/auth/authentication-flow/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Authentication Flow
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -820,6 +845,75 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#steps-to-implement-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps to Implement Authentication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps to Implement Authentication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-login-and-signup-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Create Login and Signup Pages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-protect-api-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Protect API Requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-handle-token-expiry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Handle Token Expiry
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -832,7 +926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/auth/protected-routes/" class="md-nav__link">
+      <a href="../protected-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -899,7 +993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/testing/unit-testing/" class="md-nav__link">
+      <a href="../../testing/unit-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -920,7 +1014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/testing/component-testing/" class="md-nav__link">
+      <a href="../../testing/component-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -941,7 +1035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/testing/e2e-testing/" class="md-nav__link">
+      <a href="../../testing/e2e-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -970,7 +1064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/debugging/debugging-guide/" class="md-nav__link">
+      <a href="../../debugging/debugging-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -991,7 +1085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/tech-debt/tech-debt/" class="md-nav__link">
+      <a href="../../tech-debt/tech-debt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1016,28 +1110,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1048,7 +1137,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Micro Frontends
@@ -1059,30 +1148,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../micro-frontends/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1091,35 +1160,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#benefits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benefits
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1132,7 +1172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../module-federation/" class="md-nav__link">
+      <a href="../../../micro-frontends/module-federation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1153,7 +1193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shared-state/" class="md-nav__link">
+      <a href="../../../micro-frontends/shared-state/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1174,7 +1214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deployment-strategies/" class="md-nav__link">
+      <a href="../../../micro-frontends/deployment-strategies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1195,7 +1235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../best-approach/" class="md-nav__link">
+      <a href="../../../micro-frontends/best-approach/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1216,7 +1256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../detailed-guide/" class="md-nav__link">
+      <a href="../../../micro-frontends/detailed-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1282,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../i18n/setup/" class="md-nav__link">
+      <a href="../../../i18n/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1303,7 +1343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../i18n/translations/" class="md-nav__link">
+      <a href="../../../i18n/translations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1369,7 +1409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/ci-cd/" class="md-nav__link">
+      <a href="../../../deployment/ci-cd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1390,7 +1430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/environment-variables/" class="md-nav__link">
+      <a href="../../../deployment/environment-variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1411,7 +1451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/vercel/" class="md-nav__link">
+      <a href="../../../deployment/vercel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1432,7 +1472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/netlify/" class="md-nav__link">
+      <a href="../../../deployment/netlify/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1453,7 +1493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/docker/" class="md-nav__link">
+      <a href="../../../deployment/docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1474,7 +1514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/micro-frontend-deployment/" class="md-nav__link">
+      <a href="../../../deployment/micro-frontend-deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1533,7 +1573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/solved/intro/" class="md-nav__link">
+      <a href="../../../deployment/solved/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1554,7 +1594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/solved/refreshing-issue/" class="md-nav__link">
+      <a href="../../../deployment/solved/refreshing-issue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1575,7 +1615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/solved/refresh-reloading-react/" class="md-nav__link">
+      <a href="../../../deployment/solved/refresh-reloading-react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1621,8 +1661,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1631,11 +1669,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#benefits" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Benefits
+      Overview
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#steps-to-implement-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps to Implement Authentication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps to Implement Authentication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-login-and-signup-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Create Login and Signup Pages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-protect-api-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Protect API Requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-handle-token-expiry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Handle Token Expiry
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1654,15 +1734,78 @@
                   
 
 
-<h1 id="micro-frontends-introduction">🧩 Micro Frontends: Introduction</h1>
-<p>Micro Frontends is an architectural style where a frontend application is divided into smaller, independently deployable parts.</p>
-<h2 id="benefits">Benefits</h2>
-<ul>
-<li>Independent deployments</li>
-<li>Technology-agnostic</li>
-<li>Scalable development</li>
-</ul>
-<p>Micro Frontends break down large monolithic applications into manageable modules that can be developed, deployed, and maintained separately. This approach enables teams to work on different parts of the application independently, speeding up development and reducing bottlenecks.</p>
+  <h1>Authentication Flow</h1>
+
+<h2 id="overview">Overview</h2>
+<p>Implementing authentication ensures secure access to protected resources in your application. In this section, we detail the process of creating a robust authentication flow.</p>
+<hr />
+<h2 id="steps-to-implement-authentication">Steps to Implement Authentication</h2>
+<h3 id="step-1-create-login-and-signup-pages">Step 1: Create Login and Signup Pages</h3>
+<p>Create <code>Login.jsx</code> and <code>Signup.jsx</code> components inside the <code>features/auth/pages/</code> directory:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Login.jsx</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;react&quot;</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">import</span><span class="w"> </span><span class="nx">api</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;../../shared/api&quot;</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Login</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">email</span><span class="p">,</span><span class="w"> </span><span class="nx">setEmail</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">password</span><span class="p">,</span><span class="w"> </span><span class="nx">setPassword</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleLogin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">api</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s2">&quot;/auth/login&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">email</span><span class="p">,</span><span class="w"> </span><span class="nx">password</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">      </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">&quot;token&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">token</span><span class="p">);</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">      </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Login successful!&quot;</span><span class="p">);</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Login Error:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">  </span><span class="p">};</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Login</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">input</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">        </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;email&quot;</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="nx">placeholder</span><span class="o">=</span><span class="s2">&quot;Email&quot;</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="nx">email</span><span class="p">}</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">        </span><span class="nx">onChange</span><span class="o">=</span><span class="p">{(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setEmail</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">      </span><span class="o">/&gt;</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">input</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">        </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;password&quot;</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">        </span><span class="nx">placeholder</span><span class="o">=</span><span class="s2">&quot;Password&quot;</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">        </span><span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="nx">password</span><span class="p">}</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">        </span><span class="nx">onChange</span><span class="o">=</span><span class="p">{(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setPassword</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">      </span><span class="o">/&gt;</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">button</span><span class="w"> </span><span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleLogin</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Login</span><span class="o">&lt;</span><span class="err">/button&gt;</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">  </span><span class="p">);</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="p">};</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Login</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="step-2-protect-api-requests">Step 2: Protect API Requests</h3>
+<p>Add a request interceptor in your Axios instance (<code>api.js</code>) to include the authentication token:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">api</span><span class="p">.</span><span class="nx">interceptors</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="p">(</span><span class="nx">config</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nx">config</span><span class="p">.</span><span class="nx">headers</span><span class="p">[</span><span class="s2">&quot;Authorization&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`Bearer </span><span class="si">${</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">&quot;token&quot;</span><span class="p">)</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">config</span><span class="p">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">reject</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="step-3-handle-token-expiry">Step 3: Handle Token Expiry</h3>
+<p>Implement token expiration logic and prompt users to log in again if the token is invalid:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">api</span><span class="p">.</span><span class="nx">interceptors</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="p">(</span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">response</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">401</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">      </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Session expired. Please log in again.&quot;</span><span class="p">);</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">      </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="s2">&quot;token&quot;</span><span class="p">);</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;/login&quot;</span><span class="p">;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">reject</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="p">);</span>
+</span></code></pre></div>
 
 
 
@@ -1698,7 +1841,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../core/tech-debt/tech-debt/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tech Debt">
+          <a href="../../error-handling/api-error-handling/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Handling API errors">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1708,20 +1851,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Tech Debt
+                Handling API errors
               </div>
             </div>
           </a>
         
         
           
-          <a href="../module-federation/" class="md-footer__link md-footer__link--next" aria-label="Next: Module Federation">
+          <a href="../protected-routes/" class="md-footer__link md-footer__link--next" aria-label="Next: Protected Route">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Module Federation
+                Protected Route
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1759,10 +1902,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>

@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://bt-frontend.github.io/micro-frontends/best-approach/">
+        <link rel="canonical" href="https://bt-frontend.github.io/core/debugging/debugging-guide/">
       
       
-        <link rel="prev" href="../deployment-strategies/">
+        <link rel="prev" href="../../testing/e2e-testing/">
       
       
-        <link rel="next" href="../detailed-guide/">
+        <link rel="next" href="../../tech-debt/tech-debt/">
       
       
-      <link rel="icon" href="../../assets/logo/favicon.png">
+      <link rel="icon" href="../../../assets/logo/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
-        <title>Best Approach - Modern Frontend Documentation</title>
+        <title>Debugging - Modern Frontend Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-monorepo-easiest-to-start" class="md-skip">
+        <a href="#debugging-guide-for-react-applications" class="md-skip">
           Skip to content
         </a>
       
@@ -90,9 +90,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Modern Frontend Documentation" class="md-header__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
+    <a href="../../.." title="Modern Frontend Documentation" class="md-header__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
       
-  <img src="../../assets/logo/frontend.png" alt="logo">
+  <img src="../../../assets/logo/frontend.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Best Approach
+              Debugging
             
           </span>
         </div>
@@ -210,28 +210,10 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../blog/" class="md-tabs__link">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   Blog
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../core/intro/" class="md-tabs__link">
-          
-  
-  Core
 
         </a>
       </li>
@@ -248,7 +230,25 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../introduction/" class="md-tabs__link">
+        <a href="../../intro/" class="md-tabs__link">
+          
+  
+  Core
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../micro-frontends/introduction/" class="md-tabs__link">
           
   
   Micro Frontends
@@ -266,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../i18n/setup/" class="md-tabs__link">
+        <a href="../../../i18n/setup/" class="md-tabs__link">
           
   
   Internationalization (i18n)
@@ -284,7 +284,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../deployment/ci-cd/" class="md-tabs__link">
+        <a href="../../../deployment/ci-cd/" class="md-tabs__link">
           
   
   Deployment
@@ -323,9 +323,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Modern Frontend Documentation" class="md-nav__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
+    <a href="../../.." title="Modern Frontend Documentation" class="md-nav__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
       
-  <img src="../../assets/logo/frontend.png" alt="logo">
+  <img src="../../../assets/logo/frontend.png" alt="logo">
 
     </a>
     Modern Frontend Documentation
@@ -380,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/" class="md-nav__link">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -401,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,23 +426,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -453,7 +458,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Core
@@ -467,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/intro/" class="md-nav__link">
+      <a href="../../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -526,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/guidelines/naming-conventions/" class="md-nav__link">
+      <a href="../../guidelines/naming-conventions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -547,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/guidelines/linting-formatting/" class="md-nav__link">
+      <a href="../../guidelines/linting-formatting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -568,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/guidelines/file-structure/" class="md-nav__link">
+      <a href="../../guidelines/file-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -635,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/accessibility/best-practices/" class="md-nav__link">
+      <a href="../../accessibility/best-practices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -656,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/accessibility/testing/" class="md-nav__link">
+      <a href="../../accessibility/testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/error-handling/global-error-boundaries/" class="md-nav__link">
+      <a href="../../error-handling/global-error-boundaries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -744,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/error-handling/api-error-handling/" class="md-nav__link">
+      <a href="../../error-handling/api-error-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -811,7 +816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/auth/authentication-flow/" class="md-nav__link">
+      <a href="../../auth/authentication-flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -832,7 +837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/auth/protected-routes/" class="md-nav__link">
+      <a href="../../auth/protected-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -899,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/testing/unit-testing/" class="md-nav__link">
+      <a href="../../testing/unit-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -920,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/testing/component-testing/" class="md-nav__link">
+      <a href="../../testing/component-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -941,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/testing/e2e-testing/" class="md-nav__link">
+      <a href="../../testing/e2e-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -967,10 +972,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../core/debugging/debugging-guide/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Debugging
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -979,6 +1004,293 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-debugging-with-browser-devtools" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Debugging with Browser DevTools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Debugging with Browser DevTools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inspecting-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspecting Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-console-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Console Logs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging-network-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debugging Network Requests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-react-developer-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. React Developer Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. React Developer Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-debugging-state-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Debugging State Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Debugging State Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#redux-devtools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Redux DevTools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-debugging-asynchronous-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Debugging Asynchronous Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Debugging Asynchronous Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-using-breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Using Breakpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Using Breakpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-breakpoints-in-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Breakpoints in Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-breakpoints-in-devtools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Breakpoints in DevTools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-common-debugging-issues-and-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Common Debugging Issues and Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Common Debugging Issues and Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-component-not-rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem: Component Not Rendering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-state-not-updating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem: State Not Updating
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-api-call-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem: API Call Fails
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-debugging-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Debugging Performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Debugging Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#react-profiler" class="md-nav__link">
+    <span class="md-ellipsis">
+      React Profiler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-additional-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Additional Tools
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -991,7 +1303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/tech-debt/tech-debt/" class="md-nav__link">
+      <a href="../../tech-debt/tech-debt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1016,28 +1328,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1048,7 +1355,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Micro Frontends
@@ -1062,7 +1369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../../../micro-frontends/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1083,7 +1390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../module-federation/" class="md-nav__link">
+      <a href="../../../micro-frontends/module-federation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1104,7 +1411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shared-state/" class="md-nav__link">
+      <a href="../../../micro-frontends/shared-state/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1125,7 +1432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deployment-strategies/" class="md-nav__link">
+      <a href="../../../micro-frontends/deployment-strategies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1143,28 +1450,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Best Approach
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../micro-frontends/best-approach/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1173,78 +1462,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-monorepo-easiest-to-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ 1. Monorepo (Easiest to Start)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-independent-repos-more-advanced" class="md-nav__link">
-    <span class="md-ellipsis">
-      🗂️ 2. Independent Repos (More Advanced)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-versioning-and-caching-intermediate" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔄 3. Versioning and Caching (Intermediate)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#recommendation-for-you-monorepo" class="md-nav__link">
-    <span class="md-ellipsis">
-      🏆 Recommendation for You: Monorepo
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#steps-to-set-up-monorepo-for-micro-frontends" class="md-nav__link">
-    <span class="md-ellipsis">
-      🚀 Steps to Set Up Monorepo for Micro Frontends:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-concepts-to-learn-next" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧑‍💻 Key Concepts to Learn Next:
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1257,7 +1474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../detailed-guide/" class="md-nav__link">
+      <a href="../../../micro-frontends/detailed-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1323,7 +1540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../i18n/setup/" class="md-nav__link">
+      <a href="../../../i18n/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1344,7 +1561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../i18n/translations/" class="md-nav__link">
+      <a href="../../../i18n/translations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1410,7 +1627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/ci-cd/" class="md-nav__link">
+      <a href="../../../deployment/ci-cd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1431,7 +1648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/environment-variables/" class="md-nav__link">
+      <a href="../../../deployment/environment-variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1452,7 +1669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/vercel/" class="md-nav__link">
+      <a href="../../../deployment/vercel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1473,7 +1690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/netlify/" class="md-nav__link">
+      <a href="../../../deployment/netlify/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1494,7 +1711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/docker/" class="md-nav__link">
+      <a href="../../../deployment/docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1515,7 +1732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/micro-frontend-deployment/" class="md-nav__link">
+      <a href="../../../deployment/micro-frontend-deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1574,7 +1791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/solved/intro/" class="md-nav__link">
+      <a href="../../../deployment/solved/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1595,7 +1812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/solved/refreshing-issue/" class="md-nav__link">
+      <a href="../../../deployment/solved/refreshing-issue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1616,7 +1833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/solved/refresh-reloading-react/" class="md-nav__link">
+      <a href="../../../deployment/solved/refresh-reloading-react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1662,6 +1879,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1670,54 +1889,267 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-monorepo-easiest-to-start" class="md-nav__link">
+  <a href="#1-debugging-with-browser-devtools" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 1. Monorepo (Easiest to Start)
+      1. Debugging with Browser DevTools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Debugging with Browser DevTools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inspecting-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspecting Components
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#2-independent-repos-more-advanced" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#viewing-console-logs" class="md-nav__link">
     <span class="md-ellipsis">
-      🗂️ 2. Independent Repos (More Advanced)
+      Viewing Console Logs
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-versioning-and-caching-intermediate" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#debugging-network-requests" class="md-nav__link">
     <span class="md-ellipsis">
-      🔄 3. Versioning and Caching (Intermediate)
+      Debugging Network Requests
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#recommendation-for-you-monorepo" class="md-nav__link">
-    <span class="md-ellipsis">
-      🏆 Recommendation for You: Monorepo
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#steps-to-set-up-monorepo-for-micro-frontends" class="md-nav__link">
+  <a href="#2-react-developer-tools" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Steps to Set Up Monorepo for Micro Frontends:
+      2. React Developer Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. React Developer Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#key-concepts-to-learn-next" class="md-nav__link">
+  <a href="#3-debugging-state-management" class="md-nav__link">
     <span class="md-ellipsis">
-      🧑‍💻 Key Concepts to Learn Next:
+      3. Debugging State Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Debugging State Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#redux-devtools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Redux DevTools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-debugging-asynchronous-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Debugging Asynchronous Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Debugging Asynchronous Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-using-breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Using Breakpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Using Breakpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-breakpoints-in-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Breakpoints in Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-breakpoints-in-devtools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Breakpoints in DevTools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-common-debugging-issues-and-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Common Debugging Issues and Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Common Debugging Issues and Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-component-not-rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem: Component Not Rendering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-state-not-updating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem: State Not Updating
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-api-call-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem: API Call Fails
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-debugging-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Debugging Performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Debugging Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#react-profiler" class="md-nav__link">
+    <span class="md-ellipsis">
+      React Profiler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-additional-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Additional Tools
     </span>
   </a>
   
@@ -1738,141 +2170,141 @@
                   
 
 
-  <h1>Best Approach</h1>
-
-<p>As someone <mark>new to Micro Frontends</mark>, the best approach for you will depend on your <strong>team size</strong>, <strong>project structure</strong>, and <strong>deployment preferences</strong>. Here's a detailed breakdown of the <mark>three strategies</mark> and <mark>which one is easiest to start with</mark>:</p>
+<h1 id="debugging-guide-for-react-applications">🛠️ Debugging Guide for React Applications</h1>
+<p>Debugging React applications efficiently is crucial for maintaining application stability and resolving issues quickly. This guide outlines various tools and techniques for debugging React apps.</p>
 <hr />
-<h2 id="1-monorepo-easiest-to-start">✅ 1. Monorepo (Easiest to Start)</h2>
-<p>Monorepo means keeping all your <mark>micro frontends</mark> in a <mark>single repository</mark>. This is the easiest approach for <strong>small teams</strong> or when you're just starting with micro frontends.</p>
-<p><strong>✅ Why Monorepo is Easiest:</strong></p>
+<h2 id="1-debugging-with-browser-devtools">1. Debugging with Browser DevTools</h2>
+<p>Modern browsers provide excellent DevTools to debug React applications. Key features include:</p>
+<h3 id="inspecting-components">Inspecting Components</h3>
 <ul>
-<li><strong>Single Codebase</strong>: Everything is in <mark>one Git repository</mark>.</li>
-<li><strong>Easy to manage shared code</strong>: You don’t need a package manager to sync versions across micro frontends.</li>
-<li><strong>Fast setup</strong>: No need for complex CI/CD pipelines for each micro frontend.</li>
+<li>Right-click on any element and select <strong>Inspect</strong> to view its DOM structure.</li>
+<li>Use the <strong>Elements</strong> tab to modify styles and view applied CSS.</li>
 </ul>
-<div class="language-text highlight"><span class="filename">🚀 Example Structure</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>modern-frontend/
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── packages/
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│   ├── app1/
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   ├── app2/
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   └── shared-lib/
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>└── package.json
-</span></code></pre></div>
-<details class="question" open="open">
-<summary>🚧 When to Use</summary>
+<h3 id="viewing-console-logs">Viewing Console Logs</h3>
 <ul>
-<li><strong>Small projects</strong>.</li>
-<li><strong>Single team managing multiple micro frontends</strong>.</li>
-<li><strong>You need fast collaboration</strong>.</li>
+<li>Use the <strong>Console</strong> tab to view logs, warnings, and errors.</li>
+<li>Add <code>console.log()</code> in your code to inspect variable values and component props/state.</li>
 </ul>
-</details>
-<p><strong>Pros:</strong></p>
+<h3 id="debugging-network-requests">Debugging Network Requests</h3>
 <ul>
-<li>✅ Easy to set up and manage.</li>
-<li>✅ Shared libraries can be updated without publishing separate packages.</li>
-<li>✅ Easier CI/CD pipeline (one pipeline for the whole project).</li>
-</ul>
-<p><strong>Cons:</strong></p>
-<ul>
-<li>❌ Doesn’t scale well for large teams or multiple independent deployments.</li>
-<li>❌ Slower build times as the repo grows.</li>
-</ul>
-<details class="tip" open="open">
-<summary>🛠 Tools to Use for Monorepo</summary>
-<ul>
-<li>
-<p><strong>Nx</strong> (recommended for React-based projects):</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pnpm<span class="w"> </span>add<span class="w"> </span>-g<span class="w"> </span>nx
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>nx<span class="w"> </span>create-nx-workspace<span class="w"> </span>modern-frontend
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>Turborepo</strong>: Another fast build system for monorepos.</p>
-</li>
-</ul>
-</details>
-<hr />
-<h2 id="2-independent-repos-more-advanced">🗂️ 2. Independent Repos (More Advanced)</h2>
-<p>In this setup, each <strong>micro frontend</strong> has its <strong>own Git repository</strong>, its <mark>own CI/CD pipeline</mark>, and is deployed independently.</p>
-<div class="language-text highlight"><span class="filename">🚀 Example Structure</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>GitHub/
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── app1/
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── app2/
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>└── shared-lib/
-</span></code></pre></div>
-<details class="question" open="open">
-<summary>🚧 When to Use</summary>
-<ul>
-<li><strong>Large projects</strong> with <strong>multiple teams</strong>.</li>
-<li>Each team works on a different micro frontend.</li>
-<li>You need <strong>independent deployment</strong>.</li>
-</ul>
-</details>
-<p><strong>Pros:</strong></p>
-<ul>
-<li>✅ Each micro frontend can be developed, tested, and deployed independently.</li>
-<li>✅ Teams can work in parallel without affecting each other.</li>
-<li>✅ Scales well for large organizations.</li>
-</ul>
-<p><strong>Cons:</strong></p>
-<ul>
-<li>❌ Harder to manage shared code (you need to publish shared libraries).</li>
-<li>❌ Complex CI/CD pipelines.</li>
-<li>❌ Requires more DevOps setup and versioning.</li>
+<li>Use the <strong>Network</strong> tab to inspect API calls, request/response payloads, and status codes.</li>
 </ul>
 <hr />
-<h2 id="3-versioning-and-caching-intermediate">🔄 3. Versioning and Caching (Intermediate)</h2>
-<p>This is a more <mark>advanced approach</mark> where you use versioning to manage shared libraries between micro frontends and <mark>cache</mark> static assets to reduce loading times.</p>
-<p><strong>✅ Why Use Versioning &amp; Caching:</strong></p>
+<h2 id="2-react-developer-tools">2. React Developer Tools</h2>
+<p>React DevTools is a browser extension specifically for debugging React apps. It provides:</p>
+<h3 id="features">Features</h3>
 <ul>
-<li>Prevents <strong>breaking changes</strong> in shared code.</li>
-<li>Improves <strong>performance</strong> by caching micro frontend assets.</li>
+<li>Inspect React component hierarchy.</li>
+<li>View and edit props and state in real time.</li>
+<li>Trace component renders to identify performance bottlenecks.</li>
 </ul>
-<details class="question" open="open">
-<summary>🚧 When to Use</summary>
+<h3 id="installation">Installation</h3>
+<p>Install React DevTools from your browser’s extension store:</p>
 <ul>
-<li><strong>When your micro frontends are already live</strong> and you need <strong>backward compatibility</strong>.</li>
-<li><strong>When you want better performance</strong> for loading micro frontends.</li>
-</ul>
-</details>
-<p><strong>Pros:</strong></p>
-<ul>
-<li>✅ Prevents breaking changes with versioned APIs.</li>
-<li>✅ Improved performance with caching mechanisms.</li>
-</ul>
-<p><strong>Cons:</strong></p>
-<ul>
-<li>❌ Requires more complex setups (like <mark>Webpack Module Federation</mark> or <mark>Vite</mark>).</li>
-<li>❌ Harder for beginners to manage version conflicts.</li>
+<li><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">Chrome Extension</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/react-devtools/">Firefox Add-on</a></li>
 </ul>
 <hr />
-<h2 id="recommendation-for-you-monorepo">🏆 Recommendation for You: Monorepo</h2>
-<p>Since you're <mark>new to Micro Frontends</mark>, start with the <strong>Monorepo approach</strong> because:</p>
+<h2 id="3-debugging-state-management">3. Debugging State Management</h2>
+<h3 id="redux-devtools">Redux DevTools</h3>
+<p>If you use Redux for state management, Redux DevTools is invaluable.</p>
+<h3 id="features_1">Features</h3>
 <ul>
-<li>It’s <strong>easier to set up and manage</strong>.</li>
-<li>You can learn the <strong>concepts of micro frontends</strong> without worrying about complex deployment pipelines.</li>
-<li>You can migrate to <strong>Independent Repos</strong> later as your project grows.</li>
+<li>Inspect the Redux store.</li>
+<li>View dispatched actions and state changes.</li>
+<li>Time travel to previous states.</li>
+</ul>
+<h3 id="setup">Setup</h3>
+<ol>
+<li>Install Redux DevTools Extension:</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pnpm<span class="w"> </span>add<span class="w"> </span>redux-devtools-extension
+</span></code></pre></div>
+<ol>
+<li>Enable in your store configuration:</li>
+</ol>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">configureStore</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@reduxjs/toolkit&quot;</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">composeWithDevTools</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;redux-devtools-extension&quot;</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">store</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">configureStore</span><span class="p">({</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nx">reducer</span><span class="o">:</span><span class="w"> </span><span class="nx">rootReducer</span><span class="p">,</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nx">enhancers</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">composeWithDevTools</span><span class="p">()],</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">});</span>
+</span></code></pre></div>
+<hr />
+<h2 id="4-debugging-asynchronous-code">4. Debugging Asynchronous Code</h2>
+<h3 id="common-tools">Common Tools</h3>
+<ul>
+<li>Use async/await for cleaner syntax and easier debugging.</li>
+<li>Handle promise rejections with <code>.catch()</code> to log errors.</li>
+</ul>
+<p><strong>Debugging Fetch or Axios Requests</strong></p>
+<ul>
+<li>Add error handling to log API call issues:</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;/api/data&quot;</span><span class="p">);</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Error fetching data:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr />
+<h2 id="5-using-breakpoints">5. Using Breakpoints</h2>
+<h3 id="adding-breakpoints-in-code">Adding Breakpoints in Code</h3>
+<ul>
+<li>Use <code>debugger;</code> statements in your code to pause execution:</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">handleClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="k">debugger</span><span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Button clicked!&quot;</span><span class="p">);</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">};</span>
+</span></code></pre></div>
+<h3 id="setting-breakpoints-in-devtools">Setting Breakpoints in DevTools</h3>
+<ul>
+<li>Open the Sources tab and set breakpoints directly in the code.</li>
 </ul>
 <hr />
-<h2 id="steps-to-set-up-monorepo-for-micro-frontends">🚀 Steps to Set Up Monorepo for Micro Frontends:</h2>
-<p>1️⃣ Install Nx (Monorepo Tool):</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pnpm<span class="w"> </span>add<span class="w"> </span>-g<span class="w"> </span>nx
-</span></code></pre></div>
-<p>2️⃣ Create a Workspace:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>nx<span class="w"> </span>create-nx-workspace<span class="w"> </span>modern-frontend
-</span></code></pre></div>
-<p>3️⃣ Add Micro Frontends (Apps):</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>nx<span class="w"> </span>generate<span class="w"> </span>@nx/react:app<span class="w"> </span>app1
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>nx<span class="w"> </span>generate<span class="w"> </span>@nx/react:app<span class="w"> </span>app2
-</span></code></pre></div>
-<p>4️⃣ Set Up Module Federation for Micro Frontends:</p>
+<h2 id="6-common-debugging-issues-and-solutions">6. Common Debugging Issues and Solutions</h2>
+<h3 id="problem-component-not-rendering">Problem: Component Not Rendering</h3>
 <ul>
-<li>Use <mark>Webpack Module Federation</mark> to share components and state between micro frontends.</li>
+<li>Check for typos in component names.</li>
+<li>Verify that the component is correctly imported and used.</li>
+</ul>
+<h3 id="problem-state-not-updating">Problem: State Not Updating</h3>
+<ul>
+<li>Ensure <code>setState</code> or the Redux action is called correctly.</li>
+<li>Verify <mark>immutability</mark> in state updates.</li>
+</ul>
+<h3 id="problem-api-call-fails">Problem: API Call Fails</h3>
+<ul>
+<li>Check the <strong>Network</strong> tab for error details.</li>
+<li>Verify API endpoint and request payload.</li>
 </ul>
 <hr />
-<h2 id="key-concepts-to-learn-next">🧑‍💻 Key Concepts to Learn Next:</h2>
+<h2 id="7-debugging-performance">7. Debugging Performance</h2>
+<h3 id="react-profiler">React Profiler</h3>
+<p>Use the React Profiler to:</p>
 <ul>
-<li><strong>Module Federation</strong> (for sharing code between micro frontends).</li>
-<li><strong>Nx</strong> or <strong>Turborepo</strong> (for managing Monorepos).</li>
-<li><strong>CI/CD Pipelines</strong> for deploying micro frontends.</li>
+<li>Measure component render times.</li>
+<li>Identify unnecessary re-renders.</li>
+</ul>
+<h3 id="installation_1">Installation</h3>
+<ul>
+<li>The React Profiler is included with React DevTools.</li>
+</ul>
+<h3 id="usage">Usage</h3>
+<ol>
+<li>Open React DevTools.</li>
+<li>Navigate to the <mark>Profiler</mark> tab.</li>
+<li>Start recording, interact with your app, and analyze the results.</li>
+</ol>
+<hr />
+<h2 id="8-additional-tools">8. Additional Tools</h2>
+<ul>
+<li><strong>VS Code Debugger</strong>: Debug React apps directly in VS Code.</li>
+<li><strong>LogRocket</strong>: Capture logs and user sessions for deeper insights.</li>
+<li><strong>Sentry</strong>: Monitor and debug errors in production.</li>
 </ul>
 
 
@@ -1909,7 +2341,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../deployment-strategies/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Deployment Strategies">
+          <a href="../../testing/e2e-testing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: e2e Testing">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1919,20 +2351,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Deployment Strategies
+                e2e Testing
               </div>
             </div>
           </a>
         
         
           
-          <a href="../detailed-guide/" class="md-footer__link md-footer__link--next" aria-label="Next: Detailed Guide">
+          <a href="../../tech-debt/tech-debt/" class="md-footer__link md-footer__link--next" aria-label="Next: Tech Debt">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Detailed Guide
+                Tech Debt
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1970,10 +2402,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>
