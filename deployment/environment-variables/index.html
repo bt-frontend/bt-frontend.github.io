@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#environment-variables" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -964,6 +969,94 @@
   
   
   
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core/security/token-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Token Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core/security/cors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CORS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../core/debugging/debugging-guide/" class="md-nav__link">
         
@@ -1342,6 +1435,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Enviroment Variables
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1352,6 +1458,202 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Use Environment Variables?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Environment Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Environment Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-add-a-env-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Add a .env File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-env-to-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Add .env to .gitignore
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing Environment Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessing Environment Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#react-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      React Applications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodejs-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Node.js Applications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variable-management-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Variable Management Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment Variable Management Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-dotenv" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. dotenv
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-env-cmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. env-cmd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-direnv" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. direnv
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cloud-based-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Cloud-Based Solutions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-specific-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment-Specific Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployment-Specific Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vercel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vercel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netlify" class="md-nav__link">
+    <span class="md-ellipsis">
+      Netlify
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1575,6 +1877,193 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Use Environment Variables?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Environment Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Environment Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-add-a-env-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Add a .env File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-env-to-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Add .env to .gitignore
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing Environment Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessing Environment Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#react-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      React Applications
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodejs-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Node.js Applications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variable-management-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Variable Management Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment Variable Management Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-dotenv" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. dotenv
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-env-cmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. env-cmd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-direnv" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. direnv
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cloud-based-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Cloud-Based Solutions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-specific-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment-Specific Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployment-Specific Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vercel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vercel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netlify" class="md-nav__link">
+    <span class="md-ellipsis">
+      Netlify
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1589,9 +2078,97 @@
                   
 
 
-  <h1>Enviroment Variables</h1>
-
-<p>env</p>
+<h1 id="environment-variables">Environment Variables</h1>
+<p>Environment variables store configuration settings that may differ between environments (e.g., development, testing, production). Managing these variables properly ensures a secure and flexible application.</p>
+<hr />
+<h2 id="why-use-environment-variables">Why Use Environment Variables?</h2>
+<ul>
+<li><strong>Security</strong>: Keep sensitive information like API keys out of your codebase.</li>
+<li><strong>Flexibility</strong>: Configure settings for different environments without modifying code.</li>
+<li><strong>Portability</strong>: Share configuration with other team members easily.</li>
+</ul>
+<hr />
+<h2 id="creating-environment-variables">Creating Environment Variables</h2>
+<h3 id="step-1-add-a-env-file">Step 1: Add a .env File</h3>
+<p>Create a <code>.env</code> file in your project root. This file will store your environment variables.</p>
+<div class="language-js highlight"><span class="filename">Example .env file</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">REACT_APP_API_URL</span><span class="o">=</span><span class="nx">https</span><span class="o">:</span><span class="c1">//api.example.com</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">REACT_APP_API_KEY</span><span class="o">=</span><span class="nx">your_api_key_here</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">NODE_ENV</span><span class="o">=</span><span class="nx">development</span>
+</span></code></pre></div>
+<h3 id="step-2-add-env-to-gitignore">Step 2: Add <code>.env</code> to <code>.gitignore</code></h3>
+<p>To prevent sensitive data from being committed to version control, add <code>.env</code> to your <code>.gitignore</code> file:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>.env
+</span></code></pre></div>
+<hr />
+<h2 id="accessing-environment-variables">Accessing Environment Variables</h2>
+<h3 id="react-applications">React Applications</h3>
+<p>Environment variables in React must start with <code>REACT_APP_</code> to be accessible within the codebase.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">apiUrl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">REACT_APP_API_URL</span><span class="p">;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`API URL: </span><span class="si">${</span><span class="nx">apiUrl</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="nodejs-applications">Node.js Applications</h3>
+<p>In Node.js, you can access environment variables directly using <code>process.env</code>.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">apiKey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">API_KEY</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`API Key: </span><span class="si">${</span><span class="nx">apiKey</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></code></pre></div>
+<hr />
+<h2 id="best-practices">Best Practices</h2>
+<ol>
+<li>
+<p><strong>Prefix Variables for Clarity</strong></p>
+<p>Use prefixes like <code>REACT_APP_</code> or <code>API_</code> to categorize variables logically.</p>
+</li>
+<li>
+<p><strong>Use a Library for Type Safety</strong></p>
+<p>Libraries like <a href="#">dotenv</a> or <a href="#">env-cmd</a> help load and manage environment variables safely.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>npm<span class="w"> </span>install<span class="w"> </span>dotenv
+</span></code></pre></div>
+<div class="language-js highlight"><span class="filename">Example usage</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;dotenv&quot;</span><span class="p">).</span><span class="nx">config</span><span class="p">();</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">dbHost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">DB_HOST</span><span class="p">;</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Set Defaults</strong></p>
+<p>Provide fallback values in case environment variables are missing:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PORT</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="mf">3000</span><span class="p">;</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Secure Sensitive Information</strong></p>
+<p>Store sensitive variables like API keys in a secure environment, such as cloud provider secrets (e.g., AWS Secrets Manager, Azure Key Vault).</p>
+</li>
+</ol>
+<hr />
+<h2 id="environment-variable-management-tools">Environment Variable Management Tools</h2>
+<h3 id="1-dotenv">1. dotenv</h3>
+<ul>
+<li>Loads variables from a <code>.env</code> file into <code>process.env</code>.</li>
+<li>Suitable for local development.</li>
+</ul>
+<h3 id="2-env-cmd">2. env-cmd</h3>
+<ul>
+<li>Handles multiple <code>.env</code> files for different environments.</li>
+</ul>
+<h3 id="3-direnv">3. direnv</h3>
+<ul>
+<li>Manages per-directory environment variables.</li>
+</ul>
+<h3 id="4-cloud-based-solutions">4. Cloud-Based Solutions</h3>
+<ul>
+<li>AWS Secrets Manager, Azure Key Vault, or HashiCorp Vault for production.</li>
+</ul>
+<hr />
+<h2 id="deployment-specific-configuration">Deployment-Specific Configuration</h2>
+<h3 id="vercel">Vercel</h3>
+<p>In the Vercel dashboard, go to the project settings and add environment variables under the "Environment Variables" section.</p>
+<h3 id="netlify">Netlify</h3>
+<p>In the Netlify dashboard, go to "Site Settings" &gt; "Build &amp; Deploy" &gt; "Environment" and add variables there.</p>
+<h3 id="docker">Docker</h3>
+<p>Pass environment variables using the <code>-e</code> flag:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-e<span class="w"> </span><span class="nv">API_URL</span><span class="o">=</span>https://api.example.com<span class="w"> </span>my-app
+</span></code></pre></div>
+<hr />
+<p>With proper management of environment variables, you can enhance security, flexibility, and portability in your applications.</p>
 
 
 
