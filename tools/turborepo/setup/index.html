@@ -8,22 +8,28 @@
       
       
       
+        <link rel="canonical" href="https://bt-frontend.github.io/tools/turborepo/setup/">
       
       
+        <link rel="prev" href="../../nx/setup/">
       
-      <link rel="icon" href="/assets/logo/favicon.png">
+      
+        <link rel="next" href="../../lerna/intro/">
+      
+      
+      <link rel="icon" href="../../../assets/logo/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
-        <title>Modern Frontend Documentation</title>
+        <title>Setup - Modern Frontend Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -67,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#turborepo" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -79,9 +90,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Modern Frontend Documentation" class="md-header__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
+    <a href="../../.." title="Modern Frontend Documentation" class="md-header__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
       
-  <img src="/assets/logo/frontend.png" alt="logo">
+  <img src="../../../assets/logo/frontend.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -98,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Setup
             
           </span>
         </div>
@@ -199,7 +210,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/blog/" class="md-tabs__link">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -213,11 +224,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/tools/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../overview/" class="md-tabs__link">
           
   
   Tools
@@ -235,7 +248,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/core/intro/" class="md-tabs__link">
+        <a href="../../../core/intro/" class="md-tabs__link">
           
   
   Core
@@ -253,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/micro-frontends/introduction/" class="md-tabs__link">
+        <a href="../../../micro-frontends/introduction/" class="md-tabs__link">
           
   
   Micro Frontends
@@ -271,7 +284,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/i18n/setup/" class="md-tabs__link">
+        <a href="../../../i18n/setup/" class="md-tabs__link">
           
   
   Internationalization (i18n)
@@ -289,7 +302,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/deployment/ci-cd/" class="md-tabs__link">
+        <a href="../../../deployment/ci-cd/" class="md-tabs__link">
           
   
   Deployment
@@ -328,9 +341,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Modern Frontend Documentation" class="md-nav__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
+    <a href="../../.." title="Modern Frontend Documentation" class="md-nav__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
       
-  <img src="/assets/logo/frontend.png" alt="logo">
+  <img src="../../../assets/logo/frontend.png" alt="logo">
 
     </a>
     Modern Frontend Documentation
@@ -385,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/" class="md-nav__link">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -406,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -431,23 +444,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -458,7 +476,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -472,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tools/overview/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -531,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tools/nx/setup/" class="md-nav__link">
+      <a href="../../nx/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -557,6 +575,8 @@
                 
   
   
+    
+  
   
   
     
@@ -566,11 +586,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -584,7 +604,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Turborepo
@@ -595,10 +615,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/tools/turborepo/setup/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -607,6 +647,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-features-of-turborepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features of Turborepo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-consider-turborepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Consider Turborepo:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-you-might-choose-turborepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why You Might Choose Turborepo:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-suggestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Suggestion:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -665,7 +779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tools/lerna/intro/" class="md-nav__link">
+      <a href="../../lerna/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -739,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/intro/" class="md-nav__link">
+      <a href="../../../core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -798,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/guidelines/naming-conventions/" class="md-nav__link">
+      <a href="../../../core/guidelines/naming-conventions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -819,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/guidelines/linting-formatting/" class="md-nav__link">
+      <a href="../../../core/guidelines/linting-formatting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -840,7 +954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/guidelines/file-structure/" class="md-nav__link">
+      <a href="../../../core/guidelines/file-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -907,7 +1021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/accessibility/best-practices/" class="md-nav__link">
+      <a href="../../../core/accessibility/best-practices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -928,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/accessibility/testing/" class="md-nav__link">
+      <a href="../../../core/accessibility/testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -995,7 +1109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/error-handling/global-error-boundaries/" class="md-nav__link">
+      <a href="../../../core/error-handling/global-error-boundaries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1016,7 +1130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/error-handling/api-error-handling/" class="md-nav__link">
+      <a href="../../../core/error-handling/api-error-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1083,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/auth/authentication-flow/" class="md-nav__link">
+      <a href="../../../core/auth/authentication-flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1104,7 +1218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/auth/protected-routes/" class="md-nav__link">
+      <a href="../../../core/auth/protected-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1171,7 +1285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/testing/unit-testing/" class="md-nav__link">
+      <a href="../../../core/testing/unit-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1192,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/testing/component-testing/" class="md-nav__link">
+      <a href="../../../core/testing/component-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1213,7 +1327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/testing/e2e-testing/" class="md-nav__link">
+      <a href="../../../core/testing/e2e-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1280,7 +1394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/security/token-management/" class="md-nav__link">
+      <a href="../../../core/security/token-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1301,7 +1415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/security/cors/" class="md-nav__link">
+      <a href="../../../core/security/cors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1330,7 +1444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/debugging/debugging-guide/" class="md-nav__link">
+      <a href="../../../core/debugging/debugging-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1351,7 +1465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core/tech-debt/tech-debt/" class="md-nav__link">
+      <a href="../../../core/tech-debt/tech-debt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1417,7 +1531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/micro-frontends/introduction/" class="md-nav__link">
+      <a href="../../../micro-frontends/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1438,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/micro-frontends/module-federation/" class="md-nav__link">
+      <a href="../../../micro-frontends/module-federation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1459,7 +1573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/micro-frontends/shared-state/" class="md-nav__link">
+      <a href="../../../micro-frontends/shared-state/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1480,7 +1594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/micro-frontends/deployment-strategies/" class="md-nav__link">
+      <a href="../../../micro-frontends/deployment-strategies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1501,7 +1615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/micro-frontends/best-approach/" class="md-nav__link">
+      <a href="../../../micro-frontends/best-approach/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1522,7 +1636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/micro-frontends/detailed-guide/" class="md-nav__link">
+      <a href="../../../micro-frontends/detailed-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1588,7 +1702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/i18n/setup/" class="md-nav__link">
+      <a href="../../../i18n/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1609,7 +1723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/i18n/translations/" class="md-nav__link">
+      <a href="../../../i18n/translations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1675,7 +1789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deployment/ci-cd/" class="md-nav__link">
+      <a href="../../../deployment/ci-cd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1696,7 +1810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deployment/environment-variables/" class="md-nav__link">
+      <a href="../../../deployment/environment-variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1717,7 +1831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deployment/vercel/" class="md-nav__link">
+      <a href="../../../deployment/vercel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1738,7 +1852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deployment/netlify/" class="md-nav__link">
+      <a href="../../../deployment/netlify/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1759,7 +1873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deployment/docker/" class="md-nav__link">
+      <a href="../../../deployment/docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1780,7 +1894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deployment/micro-frontend-deployment/" class="md-nav__link">
+      <a href="../../../deployment/micro-frontend-deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1839,7 +1953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deployment/solved/intro/" class="md-nav__link">
+      <a href="../../../deployment/solved/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1860,7 +1974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deployment/solved/refreshing-issue/" class="md-nav__link">
+      <a href="../../../deployment/solved/refreshing-issue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1881,7 +1995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deployment/solved/refresh-reloading-react/" class="md-nav__link">
+      <a href="../../../deployment/solved/refresh-reloading-react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1927,6 +2041,70 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-features-of-turborepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features of Turborepo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-consider-turborepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Consider Turborepo:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-you-might-choose-turborepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why You Might Choose Turborepo:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-suggestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Suggestion:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1938,8 +2116,73 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="turborepo">Turborepo (🚀)</h1>
+<p><strong>Turborepo</strong> is a high-performance build system optimized for <strong>monorepos</strong>. It focuses on speeding up the build process using <strong>task parallelization</strong> and <strong>build caching</strong>.</p>
+<hr />
+<h2 id="key-features-of-turborepo">Key Features of Turborepo</h2>
+<ul>
+<li><strong>Build Caching</strong>: Turbo optimizes the build process with caching, so only changed files are rebuilt.</li>
+<li><strong>Task Running</strong>: Supports parallel task execution across multiple projects in the monorepo.</li>
+<li><strong>Scalability</strong>: Handles large-scale projects with ease.</li>
+</ul>
+<hr />
+<h2 id="when-to-consider-turborepo">When to Consider Turborepo:</h2>
+<p>Turborepo is a powerful tool, but it's more focused on <strong>build optimization</strong> and <strong>task running</strong> in a monorepo setup. If you're primarily looking for a tool that helps optimize builds and run tasks in a monorepo, Turborepo is an excellent option. However, it doesn’t provide as much out-of-the-box support for organizing and managing <strong>micro-frontend architecture</strong> specifically.</p>
+<hr />
+<h2 id="why-you-might-choose-turborepo">Why You Might Choose Turborepo:</h2>
+<ul>
+<li>
+<p><strong>Simple monorepo</strong>: If you only need a tool for task running, build caching, and optimizing your monorepo setup (but you don’t need advanced features like code generation or dependency graph management), Turborepo is a good choice.</p>
+</li>
+<li>
+<p><strong>Build performance</strong>: If your main focus is on fast builds and efficient task running across multiple apps in a monorepo, Turborepo will do a great job, especially with its caching features.</p>
+</li>
+</ul>
+<hr />
+<p>However, if you want to <mark>structure your micro-frontends</mark> in a way that’s easy to scale and maintain with good development practices, <strong>NX</strong> is a more feature-complete solution for this purpose.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<ol>
+<li>
+<p><strong>Use NX if you are a beginner to micro-frontends</strong>:</p>
+<ul>
+<li><mark>Out-of-the-box support</mark> for monorepos, micro-frontends, dependency management, code sharing, and building/testing multiple apps in the same repo.</li>
+<li><mark>Built-in tools</mark> to help you scale and organize your micro-frontend projects.</li>
+<li>Excellent <mark>documentation and community support</mark> to help you get started easily.</li>
+</ul>
+</li>
+<li>
+<p><strong>Use Turborepo if you just need build optimization</strong>:</p>
+<ul>
+<li>If your main concern is fast, optimized builds and task running in a monorepo and you don’t need as much structure around your micro-frontend architecture, Turborepo can be a good option.</li>
+<li>It’s great for optimizing the build process and caching, but it doesn’t offer the same level of <mark>micro-frontend management</mark> as NX.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="final-suggestion">Final Suggestion:</h2>
+<p>Start with <strong>NX</strong>. It provides a more complete, beginner-friendly experience for building and <mark>scaling micro-frontends</mark>, with powerful tools to manage apps and libraries in a monorepo. You can always experiment with Turborepo later if you need more advanced build optimization.</p>
+<hr />
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://turbo.build/repo/docs">Official: turbo</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1957,6 +2200,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../nx/setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Setup
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../lerna/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Intro
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1985,10 +2266,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "/assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>

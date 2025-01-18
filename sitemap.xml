@@ -152,4 +152,20 @@
          <loc>https://bt-frontend.github.io/micro-frontends/shared-state/</loc>
          <lastmod>2025-01-18</lastmod>
     </url>
+    <url>
+         <loc>https://bt-frontend.github.io/tools/overview/</loc>
+         <lastmod>2025-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://bt-frontend.github.io/tools/lerna/intro/</loc>
+         <lastmod>2025-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://bt-frontend.github.io/tools/nx/setup/</loc>
+         <lastmod>2025-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://bt-frontend.github.io/tools/turborepo/setup/</loc>
+         <lastmod>2025-01-18</lastmod>
+    </url>
 </urlset>
