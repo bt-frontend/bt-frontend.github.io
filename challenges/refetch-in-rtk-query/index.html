@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://bt-frontend.github.io/core/testing/e2e-testing/">
+        <link rel="canonical" href="https://bt-frontend.github.io/challenges/refetch-in-rtk-query/">
       
       
-        <link rel="prev" href="../component-testing/">
+        <link rel="prev" href="../real-time-update/">
       
       
-        <link rel="next" href="../../security/token-management/">
+        <link rel="next" href="../../deployment/ci-cd/">
       
       
-      <link rel="icon" href="../../../assets/logo/favicon.png">
+      <link rel="icon" href="../../assets/logo/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
     
     
       
-        <title>e2e Testing - Modern Frontend Documentation</title>
+        <title>Refetch RTK Query - Modern Frontend Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#forcing-a-refetch-in-rtk-query-how-to-always-hit-the-api" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -85,9 +90,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Modern Frontend Documentation" class="md-header__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
+    <a href="../.." title="Modern Frontend Documentation" class="md-header__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
       
-  <img src="../../../assets/logo/frontend.png" alt="logo">
+  <img src="../../assets/logo/frontend.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              e2e Testing
+              Refetch RTK Query
             
           </span>
         </div>
@@ -205,7 +210,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../blog/" class="md-tabs__link">
+        <a href="../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -223,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../tools/overview/" class="md-tabs__link">
+        <a href="../../tools/overview/" class="md-tabs__link">
           
   
   Tools
@@ -237,13 +242,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../intro/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../core/intro/" class="md-tabs__link">
           
   
   Core
@@ -261,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../micro-frontends/introduction/" class="md-tabs__link">
+        <a href="../../micro-frontends/introduction/" class="md-tabs__link">
           
   
   Micro Frontends
@@ -279,7 +282,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../i18n/setup/" class="md-tabs__link">
+        <a href="../../i18n/setup/" class="md-tabs__link">
           
   
   Internationalization (i18n)
@@ -293,11 +296,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../challenges/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
           
   
   Challenges
@@ -315,7 +320,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../deployment/ci-cd/" class="md-tabs__link">
+        <a href="../../deployment/ci-cd/" class="md-tabs__link">
           
   
   Deployment
@@ -354,9 +359,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Modern Frontend Documentation" class="md-nav__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
+    <a href="../.." title="Modern Frontend Documentation" class="md-nav__button md-logo" aria-label="Modern Frontend Documentation" data-md-component="logo">
       
-  <img src="../../../assets/logo/frontend.png" alt="logo">
+  <img src="../../assets/logo/frontend.png" alt="logo">
 
     </a>
     Modern Frontend Documentation
@@ -411,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/" class="md-nav__link">
+      <a href="../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -432,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -498,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/overview/" class="md-nav__link">
+      <a href="../../tools/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -557,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/nx/setup/" class="md-nav__link">
+      <a href="../../tools/nx/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -624,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/turborepo/setup/" class="md-nav__link">
+      <a href="../../tools/turborepo/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -691,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/lerna/intro/" class="md-nav__link">
+      <a href="../../tools/lerna/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -724,28 +729,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -756,7 +756,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Core
@@ -770,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/" class="md-nav__link">
+      <a href="../../core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -829,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/naming-conventions/" class="md-nav__link">
+      <a href="../../core/guidelines/naming-conventions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -850,7 +850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/linting-formatting/" class="md-nav__link">
+      <a href="../../core/guidelines/linting-formatting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -871,7 +871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/file-structure/" class="md-nav__link">
+      <a href="../../core/guidelines/file-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -938,7 +938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/feature-based/" class="md-nav__link">
+      <a href="../../core/architecture/feature-based/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -959,7 +959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/state-management/" class="md-nav__link">
+      <a href="../../core/architecture/state-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1026,7 +1026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accessibility/best-practices/" class="md-nav__link">
+      <a href="../../core/accessibility/best-practices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1047,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accessibility/testing/" class="md-nav__link">
+      <a href="../../core/accessibility/testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1114,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../error-handling/global-error-boundaries/" class="md-nav__link">
+      <a href="../../core/error-handling/global-error-boundaries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1135,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../error-handling/api-error-handling/" class="md-nav__link">
+      <a href="../../core/error-handling/api-error-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1202,7 +1202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/authentication-flow/" class="md-nav__link">
+      <a href="../../core/auth/authentication-flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1223,7 +1223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/protected-routes/" class="md-nav__link">
+      <a href="../../core/auth/protected-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1249,8 +1249,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1260,11 +1258,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
         
           
           <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
@@ -1278,7 +1276,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             Testing
@@ -1292,7 +1290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit-testing/" class="md-nav__link">
+      <a href="../../core/testing/unit-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1313,7 +1311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../component-testing/" class="md-nav__link">
+      <a href="../../core/testing/component-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1331,17 +1329,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../core/testing/e2e-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1350,7 +1341,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1409,7 +1399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/token-management/" class="md-nav__link">
+      <a href="../../core/security/token-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1430,7 +1420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/cors/" class="md-nav__link">
+      <a href="../../core/security/cors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1459,7 +1449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../debugging/debugging-guide/" class="md-nav__link">
+      <a href="../../core/debugging/debugging-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1480,7 +1470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tech-debt/tech-debt/" class="md-nav__link">
+      <a href="../../core/tech-debt/tech-debt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1546,7 +1536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../micro-frontends/introduction/" class="md-nav__link">
+      <a href="../../micro-frontends/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1567,7 +1557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../micro-frontends/module-federation/" class="md-nav__link">
+      <a href="../../micro-frontends/module-federation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1588,7 +1578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../micro-frontends/shared-state/" class="md-nav__link">
+      <a href="../../micro-frontends/shared-state/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1609,7 +1599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../micro-frontends/deployment-strategies/" class="md-nav__link">
+      <a href="../../micro-frontends/deployment-strategies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1630,7 +1620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../micro-frontends/best-approach/" class="md-nav__link">
+      <a href="../../micro-frontends/best-approach/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1651,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../micro-frontends/detailed-guide/" class="md-nav__link">
+      <a href="../../micro-frontends/detailed-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1717,7 +1707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../i18n/setup/" class="md-nav__link">
+      <a href="../../i18n/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1738,7 +1728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../i18n/translations/" class="md-nav__link">
+      <a href="../../i18n/translations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1763,23 +1753,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1790,7 +1785,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Challenges
@@ -1804,7 +1799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../challenges/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1825,7 +1820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../challenges/permission-based/" class="md-nav__link">
+      <a href="../permission-based/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1846,7 +1841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../challenges/refresh-token/" class="md-nav__link">
+      <a href="../refresh-token/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1867,7 +1862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../challenges/real-time-update/" class="md-nav__link">
+      <a href="../real-time-update/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1885,10 +1880,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../challenges/refetch-in-rtk-query/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Refetch RTK Query
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1897,6 +1912,128 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#retching-api-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retching API Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retching API Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-forcerefetch-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. forceRefetch option
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-use-skip-and-trigger-with-uselazyquery" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Use skip and trigger with useLazyQuery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-refetch-with-refetch-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Refetch with refetch method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-disable-caching-for-a-specific-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Disable caching for a specific query
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-use-polling-for-interval-based-refetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Use polling (for interval-based refetch)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-method-to-choose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Method to Choose
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Method to Choose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-if-you-need-to-refetch-automatically-whenever-the-component-mounts-or-the-argument-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. If you need to refetch automatically whenever the component mounts or the argument changes:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-if-you-need-more-manual-control-over-when-to-refetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. If you need more manual control over when to refetch:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-if-you-want-to-completely-disable-caching-and-always-make-a-network-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. If you want to completely disable caching and always make a network request:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1954,7 +2091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deployment/ci-cd/" class="md-nav__link">
+      <a href="../../deployment/ci-cd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1975,7 +2112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deployment/environment-variables/" class="md-nav__link">
+      <a href="../../deployment/environment-variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1996,7 +2133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deployment/vercel/" class="md-nav__link">
+      <a href="../../deployment/vercel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2017,7 +2154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deployment/netlify/" class="md-nav__link">
+      <a href="../../deployment/netlify/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2038,7 +2175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deployment/docker/" class="md-nav__link">
+      <a href="../../deployment/docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2059,7 +2196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deployment/micro-frontend-deployment/" class="md-nav__link">
+      <a href="../../deployment/micro-frontend-deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2118,7 +2255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deployment/solved/intro/" class="md-nav__link">
+      <a href="../../deployment/solved/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2139,7 +2276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deployment/solved/refreshing-issue/" class="md-nav__link">
+      <a href="../../deployment/solved/refreshing-issue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2160,7 +2297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deployment/solved/refresh-reloading-react/" class="md-nav__link">
+      <a href="../../deployment/solved/refresh-reloading-react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2206,6 +2343,118 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#retching-api-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retching API Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retching API Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-forcerefetch-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. forceRefetch option
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-use-skip-and-trigger-with-uselazyquery" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Use skip and trigger with useLazyQuery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-refetch-with-refetch-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Refetch with refetch method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-disable-caching-for-a-specific-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Disable caching for a specific query
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-use-polling-for-interval-based-refetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Use polling (for interval-based refetch)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-method-to-choose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Method to Choose
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Method to Choose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-if-you-need-to-refetch-automatically-whenever-the-component-mounts-or-the-argument-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. If you need to refetch automatically whenever the component mounts or the argument changes:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-if-you-need-more-manual-control-over-when-to-refetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. If you need more manual control over when to refetch:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-if-you-want-to-completely-disable-caching-and-always-make-a-network-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. If you want to completely disable caching and always make a network request:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2220,9 +2469,119 @@
                   
 
 
-  <h1>e2e Testing</h1>
-
-<p>End-to-end testing strategies.</p>
+<h1 id="forcing-a-refetch-in-rtk-query-how-to-always-hit-the-api">Forcing a Refetch in RTK Query: How to Always Hit the API</h1>
+<p>In RTK Query (Redux Toolkit Query), by default, it caches responses for a specific query and doesn't refetch the data if the same request with the same parameters is made. This is done to avoid unnecessary network requests and optimize performance. However, if you need to refetch the API every time (even if the request is the same), you can override the caching behavior.</p>
+<h2 id="retching-api-methods">Retching API Methods</h2>
+<p>There are several ways to force RTK Query to always hit the API:</p>
+<hr />
+<h3 id="1-forcerefetch-option">1. <code>forceRefetch</code> option</h3>
+<p>You can use the <code>forceRefetch</code> option by setting it to <code>true</code> when making the request. This will force a refetch of the data even if the query is already cached.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useGetMyDataQuery</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nx">refetchOnMountOrArgChange</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="c1">// This forces a refetch when the component mounts or the argument changes</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nx">refetchOnFocus</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="c1">// Optional: refetch when the window gets focused</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nx">refetchOnReconnect</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="c1">// Optional: refetch when reconnecting the network</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">});</span>
+</span></code></pre></div>
+<hr />
+<h3 id="2-use-skip-and-trigger-with-uselazyquery">2. Use <code>skip</code> and <code>trigger</code> with <code>useLazyQuery</code></h3>
+<p>You can manually trigger the refetch of data using <code>useLazyQuery</code>. This is useful if you need more control over when the API request is fired, such as on a button click or a certain event.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">trigger</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useLazyGetMyDataQuery</span><span class="p">();</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">handleRefetch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nx">trigger</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">});</span><span class="w"> </span><span class="c1">// Force a refetch</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">};</span>
+</span></code></pre></div>
+<hr />
+<h3 id="3-refetch-with-refetch-method">3. Refetch with <code>refetch</code> method</h3>
+<p>If you want to refetch the query within a component, you can manually trigger a refetch by calling the <code>refetch()</code> method returned by the hook.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="p">,</span><span class="w"> </span><span class="nx">refetch</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useGetMyDataQuery</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">handleRefetch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nx">refetch</span><span class="p">();</span><span class="w"> </span><span class="c1">// Force a refetch</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">};</span>
+</span></code></pre></div>
+<hr />
+<h3 id="4-disable-caching-for-a-specific-query">4. Disable caching for a specific query</h3>
+<p>If you want to completely disable caching and refetch every time, you can modify the <code>keepUnusedDataFor</code> option in your query's configuration:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useGetMyDataQuery</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nx">keepUnusedDataFor</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="c1">// This makes the cache expire immediately</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">});</span>
+</span></code></pre></div>
+<p>This will make sure that the data isn't cached and will always trigger an API request every time the query is fired.</p>
+<hr />
+<h3 id="5-use-polling-for-interval-based-refetch">5. Use <code>polling</code> (for interval-based refetch)</h3>
+<p>If you want to refetch data at specific intervals, you can use polling with the <code>pollingInterval</code> option.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useGetMyDataQuery</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nx">pollingInterval</span><span class="o">:</span><span class="w"> </span><span class="mf">10000</span><span class="p">,</span><span class="w"> </span><span class="c1">// Refetch every 10 seconds</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">});</span>
+</span></code></pre></div>
+<p>This is useful if you want to keep your data up to date by hitting the API regularly.</p>
+<hr />
+<details class="tip" open="open">
+<summary>Summary</summary>
+<ul>
+<li>Use <code>refetchOnMountOrArgChange</code>, <code>refetchOnFocus</code>, or <code>refetchOnReconnect</code> for automatic refetching.</li>
+<li>Use <code>useLazyQuery</code> or <code>refetch</code> for manual triggering.</li>
+<li>Adjust <code>keepUnusedDataFor</code> to control cache expiration.</li>
+<li>Polling can be set if you want periodic refetching.</li>
+</ul>
+</details>
+<p>Choose the approach based on your requirements for fetching data repeatedly.</p>
+<hr />
+<h2 id="best-method-to-choose">Best Method to Choose</h2>
+<p>The best method depends on your specific use case, but here are some guidelines:</p>
+<h3 id="1-if-you-need-to-refetch-automatically-whenever-the-component-mounts-or-the-argument-changes">1. If you need to refetch automatically whenever the component mounts or the argument changes:</h3>
+<ul>
+<li>
+<p><strong>Best Method</strong>: Use <code>refetchOnMountOrArgChange</code>.</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useGetMyDataQuery</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nx">refetchOnMountOrArgChange</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">});</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Why it's best</strong>: This method is built into RTK Query to automatically refetch the data whenever the query's parameters change or the component remounts. It’s the simplest and most efficient method for ensuring that your data is always fresh.</p>
+</li>
+</ul>
+<hr />
+<h3 id="2-if-you-need-more-manual-control-over-when-to-refetch">2. If you need more manual control over when to refetch:</h3>
+<ul>
+<li>
+<p><strong>Best Method</strong>: Use <code>useLazyQuery</code> with <code>trigger</code> or the <code>refetch</code> function.</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">trigger</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useLazyGetMyDataQuery</span><span class="p">();</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">handleRefetch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nx">trigger</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">};</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Why it's best</strong>: This approach gives you full control over when the refetch happens (e.g., on button clicks, user actions, or other events). It’s ideal for scenarios where you need to trigger the request manually instead of automatically.</p>
+</li>
+</ul>
+<hr />
+<h3 id="3-if-you-want-to-completely-disable-caching-and-always-make-a-network-request">3. If you want to completely disable caching and always make a network request:</h3>
+<ul>
+<li>
+<p><strong>Best Method</strong>: Set <code>keepUnusedDataFor</code> to <code>0</code>.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useGetMyDataQuery</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nx">keepUnusedDataFor</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="p">});</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Why it's best</strong>: This method ensures that the data is never cached and always triggers an API request. It’s useful if you want to completely bypass the cache for a particular query, but be cautious as this can lead to performance issues if overused.</p>
+</li>
+</ul>
+<hr />
+<details class="tip" open="open">
+<summary>Conclusion</summary>
+<ul>
+<li>Use <code>refetchOnMountOrArgChange</code> if you want automatic, effortless refetching.</li>
+<li>Use <code>useLazyQuery</code> if you need to control when the query is triggered.</li>
+<li>Use <code>keepUnusedDataFor</code>: 0 if you want to completely disable caching.</li>
+</ul>
+</details>
+<p>For most use cases, <code>refetchOnMountOrArgChange</code> is the best method because it balances simplicity with automatic refetching.</p>
 
 
 
@@ -2258,7 +2617,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../component-testing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Component Testing">
+          <a href="../real-time-update/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Real Time">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2268,20 +2627,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Component Testing
+                Real Time
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../security/token-management/" class="md-footer__link md-footer__link--next" aria-label="Next: Token Management">
+          <a href="../../deployment/ci-cd/" class="md-footer__link md-footer__link--next" aria-label="Next: CI CD">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Token Management
+                CI CD
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2319,10 +2678,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
