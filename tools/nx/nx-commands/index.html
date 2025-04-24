@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://bt-frontend.github.io/deployment/solved/intro/">
+        <link rel="canonical" href="https://bt-frontend.github.io/tools/nx/nx-commands/">
       
       
-        <link rel="prev" href="../../micro-frontend-deployment/">
+        <link rel="prev" href="../setup/">
       
       
-        <link rel="next" href="../refreshing-issue/">
+        <link rel="next" href="../../turborepo/setup/">
       
       
       <link rel="icon" href="../../../assets/logo/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Intro - Modern Frontend Docs</title>
+        <title>Commands - Modern Frontend Docs</title>
       
     
     
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#nx-commands" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -104,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Intro
+              Commands
             
           </span>
         </div>
@@ -219,11 +224,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../tools/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../overview/" class="md-tabs__link">
           
   
   Tools
@@ -327,13 +334,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../ci-cd/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../deployment/ci-cd/" class="md-tabs__link">
           
   
   Deployment
@@ -478,23 +483,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -506,7 +516,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -520,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/overview/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -539,6 +549,8 @@
                 
   
   
+    
+  
   
   
     
@@ -548,11 +560,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -567,7 +579,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             NX
@@ -581,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/nx/setup/" class="md-nav__link">
+      <a href="../setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,10 +612,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../tools/nx/nx-commands/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Commands
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -613,6 +646,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -672,7 +734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/turborepo/setup/" class="md-nav__link">
+      <a href="../../turborepo/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -741,7 +803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/lerna/intro/" class="md-nav__link">
+      <a href="../../lerna/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2104,28 +2166,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2137,7 +2194,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Deployment
@@ -2151,7 +2208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ci-cd/" class="md-nav__link">
+      <a href="../../../deployment/ci-cd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2173,7 +2230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../environment-variables/" class="md-nav__link">
+      <a href="../../../deployment/environment-variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2195,7 +2252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../vercel/" class="md-nav__link">
+      <a href="../../../deployment/vercel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2217,7 +2274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../netlify/" class="md-nav__link">
+      <a href="../../../deployment/netlify/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2239,7 +2296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docker/" class="md-nav__link">
+      <a href="../../../deployment/docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2261,7 +2318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../micro-frontend-deployment/" class="md-nav__link">
+      <a href="../../../deployment/micro-frontend-deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2280,8 +2337,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2291,11 +2346,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_7" >
         
           
           <label class="md-nav__link" for="__nav_8_7" id="__nav_8_7_label" tabindex="0">
@@ -2310,7 +2365,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_7">
             <span class="md-nav__icon md-icon"></span>
             Solved
@@ -2321,17 +2376,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../deployment/solved/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2341,7 +2389,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -2354,7 +2401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../refreshing-issue/" class="md-nav__link">
+      <a href="../../../deployment/solved/refreshing-issue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2376,7 +2423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../refresh-reloading-react/" class="md-nav__link">
+      <a href="../../../deployment/solved/refresh-reloading-react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2423,6 +2470,25 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2438,17 +2504,44 @@
 
 
 
-  <h1>Intro</h1>
-
-<p>why after deploying my react app and if i reloading my app with /pages or with routes it breaks but if i click in link and goes to /pages it doesn't break. i have build my app with react, vite and pnpm. how to solve this.</p>
-<p>When you click on a link to navigate to a route (e.g., /pages), everything works fine because the React Router handles the navigation within the single-page application (SPA). However, when you refresh the page or directly navigate to a route like /pages it breaks.</p>
+<h1 id="nx-commands"><a href="https://nx.dev/reference/nx-commands#nx-commands">NX Commands</a></h1>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>nx
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>nx<span class="w"> </span>--version
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>which<span class="w"> </span>nx<span class="w">  </span><span class="c1"># macOS/Linux</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>where<span class="w"> </span>nx<span class="w">  </span><span class="c1"># Windows</span>
+</span></code></pre></div>
 <hr />
-<p>I understand you're looking for a simpler solution. Let's break it down into the most basic steps to make your React app (built with Vite and pnpm) work after deploying, specifically with routes like /pages working even when refreshing or directly accessing them.</p>
-<p>The Issue</p>
-<p>Works when clicking links: React Router handles routing client-side, and everything works fine.
-Breaks when refreshing or directly accessing routes: This happens because the server doesn't know how to handle routes that don't map to static files, so it returns a 404 error.</p>
+<p>The Nx CLI provides many commands. They are organized here into commands that:</p>
+<ul>
+<li><a href="https://nx.dev/reference/nx-commands#modify-code">Modify Code</a></li>
+<li><a href="https://nx.dev/reference/nx-commands#run-tasks">Run Tasks</a></li>
+<li><a href="https://nx.dev/reference/nx-commands#display-information">Display Information</a></li>
+<li><a href="https://nx.dev/reference/nx-commands#integrate-with-nx-cloud">Integrate with Nx Cloud</a></li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Modify Code</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># init - Adds Nx to any type of workspace. It installs nx, creates an nx.json configuration file and optionally sets up remote caching.</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>nx<span class="w"> </span>init
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># add - Install a plugin and initialize it.</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>nx<span class="w"> </span>add<span class="w"> </span>my-plugin
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># generate - Runs a generator that creates and/or modifies files based on a generator from a plugin.</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>nx<span class="w"> </span>generate<span class="w"> </span>@nx/react:component<span class="w"> </span>libs/my-lib/src/lib/my-component
+</span></code></pre></div>
+</div>
+</div>
+</div>
 <hr />
-<p><a href="https://www.youtube.com/shorts/TO-gP6DQyWA">YOUTUBE</a></p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://nx.dev/reference/nx-commands#nx-commands">Official Commands: nx commands</a></li>
+<li><a href="https://nx.dev/getting-started/intro">Intro</a></li>
+<li><a href="https://nx.dev/getting-started/installation#installing-nx-globally">Installation globally</a></li>
+</ul>
 
 
 
@@ -2484,7 +2577,7 @@ Breaks when refreshing or directly accessing routes: This happens because the se
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../micro-frontend-deployment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Micro Frontend">
+          <a href="../setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2494,20 +2587,20 @@ Breaks when refreshing or directly accessing routes: This happens because the se
                 Previous
               </span>
               <div class="md-ellipsis">
-                Micro Frontend
+                Setup
               </div>
             </div>
           </a>
         
         
           
-          <a href="../refreshing-issue/" class="md-footer__link md-footer__link--next" aria-label="Next: Refreshing Issue">
+          <a href="../../turborepo/setup/" class="md-footer__link md-footer__link--next" aria-label="Next: Setup">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Refreshing Issue
+                Setup
               </div>
             </div>
             <div class="md-footer__button md-icon">
