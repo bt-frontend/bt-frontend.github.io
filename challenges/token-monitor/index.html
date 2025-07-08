@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://bt-frontend.github.io/challenges/refresh-token/">
+        <link rel="canonical" href="https://bt-frontend.github.io/challenges/token-monitor/">
       
       
-        <link rel="prev" href="../permission-based/">
+        <link rel="prev" href="../refetch-in-rtk-query/">
       
       
-        <link rel="next" href="../real-time-update/">
+        <link rel="next" href="../dynamic-favicon/">
       
       
       <link rel="icon" href="../../assets/logo/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Refresh Token - Frontend Docs</title>
+        <title>🖥️ Token Monitor - Frontend Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#refresh-token" class="md-skip">
+        <a href="#token-monitor" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Refresh Token
+              🖥️ Token Monitor
             
           </span>
         </div>
@@ -2039,32 +2039,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Refresh Token
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../refresh-token/" class="md-nav__link">
         
   
   
@@ -2075,62 +2053,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#apiutil" class="md-nav__link">
-    <span class="md-ellipsis">
-      api.util
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-to-use-apiutil" class="md-nav__link">
-    <span class="md-ellipsis">
-      When to Use api.util:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-scenario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Scenario:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-slices-react-hooks" class="md-nav__link">
-    <span class="md-ellipsis">
-      API Slices: React Hooks
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2186,10 +2108,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../token-monitor/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    🖥️ Token Monitor
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2200,6 +2144,77 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#should-you-do-this-consider-the-following" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Should you do this? Consider the following:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-token-monitor-eg-in-appjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏱️ Create Token Monitor (e.g., in App.js)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Theory
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rtk-query-standard-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      RTK Query Standard Approach
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proactive-refresh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proactive Refresh
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2706,38 +2721,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#apiutil" class="md-nav__link">
+  <a href="#should-you-do-this-consider-the-following" class="md-nav__link">
     <span class="md-ellipsis">
-      api.util
+      ⚠️ Should you do this? Consider the following:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#when-to-use-apiutil" class="md-nav__link">
+  <a href="#create-token-monitor-eg-in-appjs" class="md-nav__link">
     <span class="md-ellipsis">
-      When to Use api.util:
+      ⏱️ Create Token Monitor (e.g., in App.js)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-scenario" class="md-nav__link">
+  <a href="#theory" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Scenario:
+      Theory
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rtk-query-standard-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      RTK Query Standard Approach
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#api-slices-react-hooks" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#proactive-refresh" class="md-nav__link">
     <span class="md-ellipsis">
-      API Slices: React Hooks
+      Proactive Refresh
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2757,119 +2787,297 @@
 
 
 
-<h1 id="refresh-token">Refresh Token</h1>
+<h1 id="token-monitor">Token Monitor</h1>
+<p>When it comes to refreshing tokens in a React app using Redux Toolkit and Axios, the <strong>two most common approaches</strong> are:</p>
+<ul>
+<li>🔁 In Axios interceptors</li>
+<li>🔁 Proactively in React hooks</li>
+</ul>
+<p>TL;DR — Use Axios interceptors for token refresh</p>
+<ul>
+<li>✅ Best practice: Use an Axios interceptor to catch 401 responses and refresh the token transparently.</li>
+<li>🔁 Optionally, use a hook to proactively refresh (e.g., before expiry) in special cases like long-lived sessions or silent background refresh.</li>
+</ul>
 <hr />
-<p>These are included as <code>api.util</code> inside the <mark>API object</mark>.</p>
-<h2 id="apiutil">api.util</h2>
-<p><strong>In RTK Query</strong> (Redux Toolkit Query), <code>api.util</code> refers to a set of utilities that can be used for <strong>caching</strong> and <strong>optimistic updates</strong> within the <strong>API service</strong>. It's an important feature when working with <mark>Redux Toolkit</mark> and <mark>RTK Query</mark> because it allows you to interact with the cache, trigger refetches, and update the store, making it easier to manage the state of your app with API calls.</p>
-<div class="admonition quote">
-<p class="admonition-title">Here’s a breakdown of <code>api.util</code>:</p>
-</div>
+<h2 id="should-you-do-this-consider-the-following">⚠️ Should you do this? Consider the following:</h2>
 <ol>
 <li>
-<p><code>api.util.updateQueryData</code></p>
-<p>This method allows you to <mark>optimistically update</mark> the data in the Redux store for a particular query. It is useful when you want to modify or update the data in the cache without making an actual API call (e.g., when performing optimistic updates).</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">api</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">updateQueryData</span><span class="p">(</span><span class="s2">&quot;getPosts&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">undefined</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">draft</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nx">draft</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">newPost</span><span class="p">);</span><span class="w"> </span><span class="c1">// Add a new post to the cached data</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">});</span>
-</span></code></pre></div>
+<p><strong>Security Risk</strong></p>
 <ul>
-<li><code>'getPosts'</code> is the name of the query endpoint.</li>
-<li><code>undefined</code> is used when the query does not take any parameters.</li>
-<li>The <code>draft</code> is the mutable data of the query that you can update.</li>
+<li>If <code>loginFormData</code> contains sensitive credentials (e.g., username/password), storing or reusing it after login could pose a security risk.</li>
+<li>Ideally, you shouldn’t store plaintext credentials in memory beyond their immediate use.</li>
 </ul>
 </li>
 <li>
-<p><code>api.util.invalidateTags</code></p>
-<p>This utility helps you <mark>invalidate the cache</mark> for specific tags, triggering a <mark>refetch</mark> of the relevant data. It's typically used when you want to refresh certain data after a mutation (e.g., after a successful update, delete, or create operation).</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">api</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">invalidateTags</span><span class="p">([{</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Post&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="nx">newPost</span><span class="p">.</span><span class="nx">id</span><span class="w"> </span><span class="p">}]);</span>
-</span></code></pre></div>
+<p><strong>User Experience</strong></p>
 <ul>
-<li>This invalidates a cache entry for a <code>Post</code> with the given <code>id</code>.</li>
-<li>This triggers a refetch for the specific <code>Post</code> if it’s being used in a component.</li>
+<li>Automatically logging in the user after a refresh failure might confuse the user if credentials have changed or expired.</li>
+<li>It may also mask issues that should be handled with explicit re-authentication (e.g., prompting the user to log in again).</li>
 </ul>
 </li>
 <li>
-<p><code>api.util.resetApiState</code></p>
-<p>This method is used to <mark>reset the entire API state</mark> in the Redux store. It can be useful when you want to clear all cached data, for example, when the user logs out.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">api</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">resetApiState</span><span class="p">();</span>
-</span></code></pre></div>
+<p><strong>Silent Failures</strong></p>
+<ul>
+<li>If the <code>login()</code> call fails again, what will your fallback be? Without a retry limit or error state handling, this can lead to poor UX.</li>
+</ul>
 </li>
 <li>
-<p><code>api.util.select()</code>, <code>api.util.selectQueryData()</code></p>
-<p>These methods help you <mark>select specific data</mark> from the API cache, allowing you to access and inspect cached data directly from the Redux store.</p>
+<p><strong>State Consistency</strong></p>
+<ul>
+<li>You’ll need to ensure that any Redux state or context (e.g., <code>setUser</code>, token storage, etc.) is updated accordingly, and that all requests waiting on a token retry are resumed pro</li>
+</ul>
 </li>
 </ol>
-<h2 id="when-to-use-apiutil">When to Use api.util:</h2>
+<hr />
+<details class="note" open="open">
+<summary>✅ Goal</summary>
 <ul>
-<li><strong>Optimistic updates</strong>: When you want to make an update to the cache before the mutation request finishes (e.g., showing an updated list of posts right after creating a new one).</li>
-<li><strong>Cache invalidation</strong>: To ensure that the cache is updated and that the next time a query is made, the data is fresh (e.g., after a successful mutation).</li>
-<li><strong>Clearing cache</strong>: When resetting the application state (like when logging out).</li>
-<li><strong>Refetching data</strong>: After performing certain actions like adding, updating, or deleting items, it may be necessary to refresh the associated data to reflect those changes.</li>
+<li><strong>Persist</strong> tokens (and their timestamps) in Redux store using redux-persist</li>
+<li><strong>Monitor token expiration</strong> using <code>exp</code> timestamp</li>
+<li><strong>Automatically refresh</strong> the token before it expires</li>
 </ul>
-<h2 id="example-scenario">Example Scenario:</h2>
-<p>Suppose you have a <code>getPosts</code> query and a <code>createPost</code> mutation. When you create a new post, you may want to optimistically add the post to the cache without waiting for the API request to finish. Then, after the mutation finishes, you can invalidate the cache for <code>getPosts</code> to make sure the list is refreshed.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">postsApi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">createApi</span><span class="p">({</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nx">reducerPath</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;postsApi&quot;</span><span class="p">,</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nx">baseQuery</span><span class="o">:</span><span class="w"> </span><span class="nx">fetchBaseQuery</span><span class="p">({</span><span class="w"> </span><span class="nx">baseUrl</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;/api/&quot;</span><span class="w"> </span><span class="p">}),</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nx">endpoints</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">builder</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nx">getPosts</span><span class="o">:</span><span class="w"> </span><span class="nx">builder</span><span class="p">.</span><span class="nx">query</span><span class="p">({</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s2">&quot;posts&quot;</span><span class="p">,</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="nx">result</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">[...</span><span class="nx">result</span><span class="p">.</span><span class="nx">map</span><span class="p">(({</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Post&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">}))]</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="p">}),</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="nx">createPost</span><span class="o">:</span><span class="w"> </span><span class="nx">builder</span><span class="p">.</span><span class="nx">mutation</span><span class="p">({</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">newPost</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;posts&quot;</span><span class="p">,</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">        </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;POST&quot;</span><span class="p">,</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">        </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="nx">newPost</span><span class="p">,</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">      </span><span class="p">}),</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">      </span><span class="c1">// Optimistically update the cache</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">      </span><span class="nx">onQueryStarted</span><span class="o">:</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">(</span><span class="nx">newPost</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">,</span><span class="w"> </span><span class="nx">queryFulfilled</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">        </span><span class="c1">// Optimistically update the cache</span>
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">        </span><span class="nx">dispatch</span><span class="p">(</span>
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">          </span><span class="nx">postsApi</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">updateQueryData</span><span class="p">(</span><span class="s2">&quot;getPosts&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">undefined</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">draft</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">            </span><span class="nx">draft</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">newPost</span><span class="p">);</span><span class="w"> </span><span class="c1">// Add the new post optimistically</span>
-</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">          </span><span class="p">})</span>
-</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">        </span><span class="p">);</span>
-</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">          </span><span class="k">await</span><span class="w"> </span><span class="nx">queryFulfilled</span><span class="p">;</span>
-</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">err</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">          </span><span class="c1">// Handle error if needed</span>
-</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">      </span><span class="p">},</span>
-</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">      </span><span class="c1">// Invalidate cache after mutation</span>
-</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">      </span><span class="nx">onSuccess</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">        </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">postsApi</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">invalidateTags</span><span class="p">([{</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Post&quot;</span><span class="w"> </span><span class="p">}]));</span>
-</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">      </span><span class="p">},</span>
-</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">    </span><span class="p">}),</span>
-</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">  </span><span class="p">}),</span>
-</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="p">});</span>
+</details>
+<details class="note" open="open">
+<summary>🧱 Assumptions</summary>
+<ul>
+<li>You store JWT tokens (or auth state) in Redux</li>
+<li>You persist them with <code>redux-persist</code></li>
+<li>You have an API to <strong>refresh</strong> the token</li>
+<li>You use RTK Query or thunk-based middleware</li>
+</ul>
+</details>
+<hr />
+<h2 id="create-token-monitor-eg-in-appjs">⏱️ Create Token Monitor (e.g., in <code>App.js</code>)</h2>
+<p>You can set up a <mark>proactive token refresh interval</mark> in your top-level component (e.g., <code>App.jsx</code>).</p>
+<div class="language-js highlight"><span class="filename">App.jsx</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useEffect</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;react&quot;</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useDispatch</span><span class="p">,</span><span class="w"> </span><span class="nx">useSelector</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;react-redux&quot;</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">import</span><span class="w"> </span><span class="nx">jwtDecode</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;jwt-decode&quot;</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">setCredentials</span><span class="p">,</span><span class="w"> </span><span class="nx">logout</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./features/auth/authSlice&quot;</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useRefreshTokenMutation</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./services/authApi&quot;</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">App</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">dispatch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useDispatch</span><span class="p">();</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">auth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useSelector</span><span class="p">((</span><span class="nx">state</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">auth</span><span class="p">);</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">refreshToken</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useRefreshTokenMutation</span><span class="p">();</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">auth</span><span class="o">?</span><span class="p">.</span><span class="nx">accessToken</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">!</span><span class="nx">auth</span><span class="o">?</span><span class="p">.</span><span class="nx">exp</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">refreshThreshold</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">60</span><span class="p">;</span><span class="w"> </span><span class="c1">// seconds before expiration</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">currentTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">timeUntilExpire</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">auth</span><span class="p">.</span><span class="nx">exp</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">currentTime</span><span class="p">;</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">timeUntilExpire</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">refreshThreshold</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">      </span><span class="c1">// refresh proactively</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">      </span><span class="nx">refreshToken</span><span class="p">({</span><span class="w"> </span><span class="nx">token</span><span class="o">:</span><span class="w"> </span><span class="nx">auth</span><span class="p">.</span><span class="nx">refreshToken</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">        </span><span class="p">.</span><span class="nx">unwrap</span><span class="p">()</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">        </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">          </span><span class="kd">const</span><span class="w"> </span><span class="nx">decoded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">jwtDecode</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">accessToken</span><span class="p">);</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">          </span><span class="nx">dispatch</span><span class="p">(</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">            </span><span class="nx">setCredentials</span><span class="p">({</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">              </span><span class="nx">accessToken</span><span class="o">:</span><span class="w"> </span><span class="nx">data</span><span class="p">.</span><span class="nx">accessToken</span><span class="p">,</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">              </span><span class="nx">refreshToken</span><span class="o">:</span><span class="w"> </span><span class="nx">data</span><span class="p">.</span><span class="nx">refreshToken</span><span class="p">,</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">              </span><span class="nx">exp</span><span class="o">:</span><span class="w"> </span><span class="nx">decoded</span><span class="p">.</span><span class="nx">exp</span><span class="p">,</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">              </span><span class="nx">iat</span><span class="o">:</span><span class="w"> </span><span class="nx">decoded</span><span class="p">.</span><span class="nx">iat</span><span class="p">,</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">              </span><span class="nx">user</span><span class="o">:</span><span class="w"> </span><span class="nx">data</span><span class="p">.</span><span class="nx">user</span><span class="p">,</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">            </span><span class="p">})</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">          </span><span class="p">);</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">        </span><span class="p">})</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">        </span><span class="p">.</span><span class="k">catch</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">          </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">logout</span><span class="p">());</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">        </span><span class="p">});</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">interval</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">setInterval</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">expiresIn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">auth</span><span class="p">.</span><span class="nx">exp</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">now</span><span class="p">;</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">expiresIn</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">refreshThreshold</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">        </span><span class="nx">refreshToken</span><span class="p">({</span><span class="w"> </span><span class="nx">token</span><span class="o">:</span><span class="w"> </span><span class="nx">auth</span><span class="p">.</span><span class="nx">refreshToken</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="w">          </span><span class="p">.</span><span class="nx">unwrap</span><span class="p">()</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="w">          </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">decoded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">jwtDecode</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">accessToken</span><span class="p">);</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="w">            </span><span class="nx">dispatch</span><span class="p">(</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="w">              </span><span class="nx">setCredentials</span><span class="p">({</span>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="w">                </span><span class="nx">accessToken</span><span class="o">:</span><span class="w"> </span><span class="nx">data</span><span class="p">.</span><span class="nx">accessToken</span><span class="p">,</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="w">                </span><span class="nx">refreshToken</span><span class="o">:</span><span class="w"> </span><span class="nx">data</span><span class="p">.</span><span class="nx">refreshToken</span><span class="p">,</span>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="w">                </span><span class="nx">exp</span><span class="o">:</span><span class="w"> </span><span class="nx">decoded</span><span class="p">.</span><span class="nx">exp</span><span class="p">,</span>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="w">                </span><span class="nx">iat</span><span class="o">:</span><span class="w"> </span><span class="nx">decoded</span><span class="p">.</span><span class="nx">iat</span><span class="p">,</span>
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="w">                </span><span class="nx">user</span><span class="o">:</span><span class="w"> </span><span class="nx">data</span><span class="p">.</span><span class="nx">user</span><span class="p">,</span>
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="w">              </span><span class="p">})</span>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="w">            </span><span class="p">);</span>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="w">          </span><span class="p">})</span>
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="w">          </span><span class="p">.</span><span class="k">catch</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="w">            </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">logout</span><span class="p">());</span>
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="w">          </span><span class="p">});</span>
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span><span class="w"> </span><span class="c1">// check every 30 seconds</span>
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">clearInterval</span><span class="p">(</span><span class="nx">interval</span><span class="p">);</span>
+</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a><span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">auth</span><span class="p">,</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">,</span><span class="w"> </span><span class="nx">refreshToken</span><span class="p">]);</span>
+</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>
+</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">{</span><span class="cm">/* Your routes/components */</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;;</span>
+</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a><span class="p">};</span>
 </span></code></pre></div>
-<p>In the above example:</p>
+<details class="note" open="open">
+<summary>Note</summary>
 <ul>
-<li><code>onQueryStarted</code> is used to optimistically update the <code>getPosts</code> cache before the mutation completes.</li>
-<li><code>onSuccess</code> invalidates the cache to ensure the data is fresh after the mutation.</li>
+<li>This approach ensures tokens are refreshed <strong>just before expiration</strong>, using the <code>exp</code> timestamp.</li>
+<li>You can tune <code>refreshThreshold</code> to control how early to refresh.</li>
+<li>Make sure your backend sets proper <code>exp</code>/<code>iat</code> in the JWT.</li>
 </ul>
+</details>
+<hr />
+<h2 id="theory">Theory</h2>
+<h3 id="rtk-query-standard-approach">RTK Query Standard Approach</h3>
+<p><mark>No</mark>, using RTK Query’s baseQuery approach alone cannot proactively refresh the token before it expires.</p>
+<details class="note" open="open">
+<summary>Explanation based on search results:</summary>
+<ul>
+<li>
+<p>The typical RTK Query baseQuery with token refresh logic works reactively: it detects a 401 Unauthorized response from the server (meaning the access token has expired) and then triggers a refresh token call to get a new token before retrying the original request.</p>
+</li>
+<li>
+<p>This approach <strong>does not track token expiry time or refresh the token proactively ahead of expiry</strong>. Instead, it waits until the server rejects a request due to an expired token.</p>
+</li>
+<li>
+<p>To refresh tokens <strong>before expiry</strong>, you need additional logic outside of RTK Query’s baseQuery, such as:</p>
+<ul>
+<li>Storing the token expiry timestamp when you receive the token.</li>
+<li>Using React hooks or middleware with timers (<code>setTimeout</code> or <code>setInterval</code>) to trigger a refresh token request proactively before the token actually expires.</li>
+</ul>
+</li>
+<li>
+<p>RTK Query’s <code>baseQuery</code> function is synchronous in nature and cannot directly use React hooks (which must be called inside React components or custom hooks), so proactive refresh logic relying on hooks or side effects cannot be implemented purely inside baseQuery.</p>
+</li>
+</ul>
+</details>
+<details class="question" open="open">
+<summary>How to do it with RTK Query</summary>
+<ol>
+<li>
+<p><strong>Create a custom baseQuery with re-authentication logic</strong></p>
+<p>Use <code>fetchBaseQuery</code> wrapped inside a custom function that:</p>
+<ul>
+<li>Executes the original query.</li>
+<li>Checks if the response is a 401 error (token expired).</li>
+<li>Calls the refresh token endpoint to get a new access token.</li>
+<li>Updates the token in your store.</li>
+<li>Retries the original query with the new token.</li>
+</ul>
+</li>
+<li>
+<p><strong>Use a mutex to prevent multiple simultaneous refresh calls</strong></p>
+<p>When multiple requests fail with 401 at the same time, use a mutex (e.g., from <code>async-mutex</code>) to ensure only one refresh call happens, preventing race conditions.</p>
+</li>
+<li>
+<p><strong>Inject the updated token into headers dynamically</strong></p>
+<p>In your baseQuery, read the current token from the store or a token management utility before each request to ensure you always send the latest token.</p>
+</li>
+</ol>
+</details>
+<div class="language-js highlight"><span class="filename">Example</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">fetchBaseQuery</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@reduxjs/toolkit/query/react&quot;</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Mutex</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;async-mutex&quot;</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">tokenReceived</span><span class="p">,</span><span class="w"> </span><span class="nx">loggedOut</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./authSlice&quot;</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">mutex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Mutex</span><span class="p">();</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">baseQuery</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fetchBaseQuery</span><span class="p">({</span><span class="w"> </span><span class="nx">baseUrl</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;/api&quot;</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="kd">const</span><span class="w"> </span><span class="nx">baseQueryWithReauth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">(</span><span class="nx">args</span><span class="p">,</span><span class="w"> </span><span class="nx">api</span><span class="p">,</span><span class="w"> </span><span class="nx">extraOptions</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">mutex</span><span class="p">.</span><span class="nx">waitForUnlock</span><span class="p">();</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">baseQuery</span><span class="p">(</span><span class="nx">args</span><span class="p">,</span><span class="w"> </span><span class="nx">api</span><span class="p">,</span><span class="w"> </span><span class="nx">extraOptions</span><span class="p">);</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">.</span><span class="nx">error</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">result</span><span class="p">.</span><span class="nx">error</span><span class="p">.</span><span class="nx">status</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">401</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">mutex</span><span class="p">.</span><span class="nx">isLocked</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">release</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">mutex</span><span class="p">.</span><span class="nx">acquire</span><span class="p">();</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">      </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">refreshResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">baseQuery</span><span class="p">(</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">          </span><span class="s2">&quot;/refreshToken&quot;</span><span class="p">,</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">          </span><span class="nx">api</span><span class="p">,</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">          </span><span class="nx">extraOptions</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span><span class="p">);</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">refreshResult</span><span class="p">.</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">          </span><span class="nx">api</span><span class="p">.</span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">tokenReceived</span><span class="p">(</span><span class="nx">refreshResult</span><span class="p">.</span><span class="nx">data</span><span class="p">));</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">          </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">baseQuery</span><span class="p">(</span><span class="nx">args</span><span class="p">,</span><span class="w"> </span><span class="nx">api</span><span class="p">,</span><span class="w"> </span><span class="nx">extraOptions</span><span class="p">);</span><span class="w"> </span><span class="c1">// retry original query</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">          </span><span class="nx">api</span><span class="p">.</span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">loggedOut</span><span class="p">());</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">        </span><span class="nx">release</span><span class="p">();</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">      </span><span class="k">await</span><span class="w"> </span><span class="nx">mutex</span><span class="p">.</span><span class="nx">waitForUnlock</span><span class="p">();</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">      </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">baseQuery</span><span class="p">(</span><span class="nx">args</span><span class="p">,</span><span class="w"> </span><span class="nx">api</span><span class="p">,</span><span class="w"> </span><span class="nx">extraOptions</span><span class="p">);</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="p">};</span>
+</span></code></pre></div>
+<p><strong>Summary</strong></p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>RTK Query baseQuery approach</th>
+<th>Proactive refresh (before expiry)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>When token is refreshed</td>
+<td>After receiving 401 Unauthorized response</td>
+<td>Before token expiry, based on expiry time</td>
+</tr>
+<tr>
+<td>Mechanism</td>
+<td>Detect 401 error, call refresh token API</td>
+<td>Use timers/hooks/middleware outside baseQuery</td>
+</tr>
+<tr>
+<td>Can <code>baseQuery</code> do proactive refresh?</td>
+<td>No</td>
+<td>Requires additional app-level logic</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Conclusion</strong></p>
-<p><code>api.util</code> in RTK Query is a powerful tool that gives you control over how you interact with your API's cache and manage refetching, updating, and invalidating data in a Redux store. It simplifies common tasks like handling optimistic updates, cache invalidation, and direct data updates, making it easier to keep your app's state in sync with the server.</p>
+<p>You <strong>cannot rely on RTK Query’s baseQuery alone to refresh tokens before they expire</strong>. The <code>baseQuery</code> approach is the recommended standard for reactive refresh on expiry detection, but proactive refresh requires separate logic implemented outside RTK Query, typically using React hooks or middleware that track token expiry and trigger refresh calls in advance.</p>
 <hr />
-<h2 id="api-slices-react-hooks"><a href="https://redux-toolkit.js.org/rtk-query/api/created-api/hooks">API Slices: React Hooks</a></h2>
-<p>RTK Query provides additional hooks for more advanced use-cases, although not all are generated directly on the <strong>Api</strong> object as well. The full list of hooks generated in the React-specific version of <code>createApi</code> is as follows:</p>
+<h3 id="proactive-refresh">Proactive Refresh</h3>
+<details class="tip" open="open">
+<summary>Proactive refresh (before expiry) considerations:</summary>
 <ul>
-<li><code>useQuery</code> (endpoint-specific, also generated on the <strong>Api</strong> object)</li>
-<li><code>useMutation</code> (endpoint-specific, also generated on the <strong>Api</strong> object)</li>
-<li><code>useQueryState</code> (endpoint-specific)</li>
-<li><code>useQuerySubscription</code> (endpoint-specific)</li>
-<li><code>useLazyQuery</code> (endpoint-specific, also generated on the <strong>Api</strong> object)</li>
-<li><code>useLazyQuerySubscription</code> (endpoint-specific)</li>
-<li><code>usePrefetch</code> (endpoint-agnostic)</li>
+<li>To refresh the token before expiry (e.g., based on token expiry time), you would need to track the token's expiration timestamp in your app state.</li>
+<li>Then, you could implement a timer or background task (outside of RTK Query baseQuery) to call the refresh endpoint proactively.</li>
+<li>RTK Query’s baseQuery mechanism does not inherently support scheduling refreshes before expiry.</li>
+<li>Hooks or other side-effect management (e.g., <code>setTimeout</code> in a React component or middleware) are typically used for proactive refresh.</li>
 </ul>
+</details>
+<p>So, <strong>if you want to refresh tokens before they expire, you will need additional logic outside of RTK Query’s baseQuery, such as React hooks with timers or middleware</strong>. The RTK Query baseQuery approach is the standard and recommended way to handle token refresh reactively on expiry.</p>
+<p><strong>Summary</strong></p>
+<table>
+<thead>
+<tr>
+<th>Approach</th>
+<th>When token is refreshed</th>
+<th>Mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reactive refresh (RTK Query baseQuery)</td>
+<td>After receiving 401 Unauthorized response</td>
+<td>Custom baseQuery detects 401, triggers refresh token API call, then retries original request</td>
+</tr>
+<tr>
+<td>Proactive refresh</td>
+<td>Before token expiry</td>
+<td>Additional logic outside RTK Query (e.g., React hooks with timers or middleware) to track expiry and refresh token proactively</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<ul>
-<li><a href="https://redux-toolkit.js.org/rtk-query/api/created-api/api-slice-utils">Official, API Slices: Utilities</a></li>
-<li><a href="https://redux-toolkit.js.org/rtk-query/api/created-api/hooks">Official, API Slices: React Hooks</a></li>
-</ul>
 
 
 
@@ -2905,7 +3113,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../permission-based/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Permission Based">
+          <a href="../refetch-in-rtk-query/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Refetch RTK Query">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2915,20 +3123,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Permission Based
+                Refetch RTK Query
               </div>
             </div>
           </a>
         
         
           
-          <a href="../real-time-update/" class="md-footer__link md-footer__link--next" aria-label="Next: Real Time">
+          <a href="../dynamic-favicon/" class="md-footer__link md-footer__link--next" aria-label="Next: ❤️‍🔥 Dynamic Favicon">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Real Time
+                ❤️‍🔥 Dynamic Favicon
               </div>
             </div>
             <div class="md-footer__button md-icon">
