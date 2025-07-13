@@ -2912,6 +2912,19 @@
 </ul>
 </li>
 </ul>
+<details class="quote" open="open">
+<summary>Quote</summary>
+<p>React apps often use tokens for auth, but <code>localStorage</code> <strong>is accessible via JavaScript</strong>, and thus vulnerable to XSS.</p>
+<p>❌ Don’t:</p>
+<ul>
+<li>Store tokens like JWTs in <code>localStorage</code> or <code>sessionStorage</code>.</li>
+</ul>
+<p>✅ Do:</p>
+<ul>
+<li>Use <code>httpOnly</code> <strong>cookies</strong> for auth tokens (set from the backend).</li>
+<li>If you must store anything in the client, <strong>encrypt it</strong> and expire it quickly.</li>
+</ul>
+</details>
 <hr />
 <h2 id="6-clickjacking">6. Clickjacking</h2>
 <ul>
@@ -2944,7 +2957,7 @@
 <p><strong>Mitigation</strong>:</p>
 <ul>
 <li>Regularly audit dependencies (e.g., <code>npm audit</code>, <code>yarn audit</code>).</li>
-<li>Use tools like Snyk or Dependabot.</li>
+<li>Use tools like <a href="#">Snyk</a> or <a href="#">Dependabot</a>.</li>
 <li>Keep dependencies updated.</li>
 </ul>
 </li>
@@ -2973,6 +2986,17 @@
 </ul>
 </li>
 </ul>
+<details class="quote" open="open">
+<summary>Quote</summary>
+<p>CORS is managed by the backend, but React devs often work with APIs.</p>
+<p>✅ Do:</p>
+<ul>
+<li>Ensure APIs implement strict CORS policies (not <code>Access-Control-Allow-Origin: *</code>).</li>
+<li>Avoid leaking credentials with <code>fetch</code> unless intended:</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">credentials</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;include&#39;</span><span class="w"> </span><span class="p">})</span>
+</span></code></pre></div>
+</details>
 
 
 
