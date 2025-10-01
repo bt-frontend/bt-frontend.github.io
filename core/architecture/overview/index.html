@@ -8,16 +8,16 @@
       
       
       
-        <link rel="canonical" href="https://bt-frontend.github.io/tools/overview/">
+        <link rel="canonical" href="https://bt-frontend.github.io/core/architecture/overview/">
       
       
-        <link rel="prev" href="../../blog/">
+        <link rel="prev" href="../../guidelines/file-structure/">
       
       
-        <link rel="next" href="../nx/setup/">
+        <link rel="next" href="../feature-based/">
       
       
-      <link rel="icon" href="../../assets/logo/favicon.png">
+      <link rel="icon" href="../../../assets/logo/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
@@ -26,10 +26,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nx-vs-turborepo" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -90,9 +90,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Frontend Docs" class="md-header__button md-logo" aria-label="Frontend Docs" data-md-component="logo">
+    <a href="../../.." title="Frontend Docs" class="md-header__button md-logo" aria-label="Frontend Docs" data-md-component="logo">
       
-  <img src="../../assets/logo/frontend.png" alt="logo">
+  <img src="../../../assets/logo/frontend.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -214,11 +214,31 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../blog/" class="md-tabs__link">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   
   Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../tools/overview/" class="md-tabs__link">
+          
+  
+  
+  Tools
 
         </a>
       </li>
@@ -236,27 +256,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
-          
-  
-  
-  Tools
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../core/intro/" class="md-tabs__link">
+        <a href="../../intro/" class="md-tabs__link">
           
   
   
@@ -276,7 +276,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../business-logic/overview/" class="md-tabs__link">
+        <a href="../../../business-logic/overview/" class="md-tabs__link">
           
   
   
@@ -296,7 +296,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../challenges/overview/" class="md-tabs__link">
+        <a href="../../../challenges/overview/" class="md-tabs__link">
           
   
   
@@ -316,7 +316,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../security/overview/" class="md-tabs__link">
+        <a href="../../../security/overview/" class="md-tabs__link">
           
   
   
@@ -336,7 +336,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../micro-frontends/introduction/" class="md-tabs__link">
+        <a href="../../../micro-frontends/introduction/" class="md-tabs__link">
           
   
   
@@ -356,7 +356,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../deployment/ci-cd/" class="md-tabs__link">
+        <a href="../../../deployment/ci-cd/" class="md-tabs__link">
           
   
   
@@ -396,9 +396,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Frontend Docs" class="md-nav__button md-logo" aria-label="Frontend Docs" data-md-component="logo">
+    <a href="../../.." title="Frontend Docs" class="md-nav__button md-logo" aria-label="Frontend Docs" data-md-component="logo">
       
-  <img src="../../assets/logo/frontend.png" alt="logo">
+  <img src="../../../assets/logo/frontend.png" alt="logo">
 
     </a>
     Frontend Docs
@@ -456,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/" class="md-nav__link">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   
@@ -479,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -506,29 +506,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -541,7 +536,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -552,30 +547,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../tools/overview/" class="md-nav__link">
         
   
   
@@ -586,51 +561,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#nx-vs-turborepo" class="md-nav__link">
-    <span class="md-ellipsis">
-      NX vs Turborepo
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#recommendation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recommendation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#in-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      In Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -684,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nx/setup/" class="md-nav__link">
+      <a href="../../../tools/nx/setup/" class="md-nav__link">
         
   
   
@@ -707,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nx/nx-commands/" class="md-nav__link">
+      <a href="../../../tools/nx/nx-commands/" class="md-nav__link">
         
   
   
@@ -779,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../turborepo/setup/" class="md-nav__link">
+      <a href="../../../tools/turborepo/setup/" class="md-nav__link">
         
   
   
@@ -851,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lerna/intro/" class="md-nav__link">
+      <a href="../../../tools/lerna/intro/" class="md-nav__link">
         
   
   
@@ -882,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../usefull-fe-tools/" class="md-nav__link">
+      <a href="../../../tools/usefull-fe-tools/" class="md-nav__link">
         
   
   
@@ -909,24 +839,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -939,7 +874,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             CORE
@@ -953,7 +888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/intro/" class="md-nav__link">
+      <a href="../../intro/" class="md-nav__link">
         
   
   
@@ -1017,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/guidelines/naming-conventions/" class="md-nav__link">
+      <a href="../../guidelines/naming-conventions/" class="md-nav__link">
         
   
   
@@ -1040,7 +975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/guidelines/linting-formatting/" class="md-nav__link">
+      <a href="../../guidelines/linting-formatting/" class="md-nav__link">
         
   
   
@@ -1063,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/guidelines/file-structure/" class="md-nav__link">
+      <a href="../../guidelines/file-structure/" class="md-nav__link">
         
   
   
@@ -1091,6 +1026,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1101,11 +1038,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -1121,7 +1058,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Architecture
@@ -1132,10 +1069,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../core/architecture/overview/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1146,6 +1105,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-sun" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌞 Using the Sun
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#books" class="md-nav__link">
+    <span class="md-ellipsis">
+      Books
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1158,7 +1173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/architecture/feature-based/" class="md-nav__link">
+      <a href="../feature-based/" class="md-nav__link">
         
   
   
@@ -1181,7 +1196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/architecture/state-management/" class="md-nav__link">
+      <a href="../state-management/" class="md-nav__link">
         
   
   
@@ -1253,7 +1268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/accessibility/best-practices/" class="md-nav__link">
+      <a href="../../accessibility/best-practices/" class="md-nav__link">
         
   
   
@@ -1276,7 +1291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/accessibility/testing/" class="md-nav__link">
+      <a href="../../accessibility/testing/" class="md-nav__link">
         
   
   
@@ -1348,7 +1363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/error-handling/global-error-boundaries/" class="md-nav__link">
+      <a href="../../error-handling/global-error-boundaries/" class="md-nav__link">
         
   
   
@@ -1371,7 +1386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/error-handling/api-error-handling/" class="md-nav__link">
+      <a href="../../error-handling/api-error-handling/" class="md-nav__link">
         
   
   
@@ -1443,7 +1458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/auth/authentication-flow/" class="md-nav__link">
+      <a href="../../auth/authentication-flow/" class="md-nav__link">
         
   
   
@@ -1466,7 +1481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/auth/protected-routes/" class="md-nav__link">
+      <a href="../../auth/protected-routes/" class="md-nav__link">
         
   
   
@@ -1538,7 +1553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/testing/unit-testing/" class="md-nav__link">
+      <a href="../../testing/unit-testing/" class="md-nav__link">
         
   
   
@@ -1561,7 +1576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/testing/component-testing/" class="md-nav__link">
+      <a href="../../testing/component-testing/" class="md-nav__link">
         
   
   
@@ -1584,7 +1599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/testing/e2e-testing/" class="md-nav__link">
+      <a href="../../testing/e2e-testing/" class="md-nav__link">
         
   
   
@@ -1656,7 +1671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/security/token-management/" class="md-nav__link">
+      <a href="../../security/token-management/" class="md-nav__link">
         
   
   
@@ -1679,7 +1694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/security/cors/" class="md-nav__link">
+      <a href="../../security/cors/" class="md-nav__link">
         
   
   
@@ -1710,7 +1725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/debugging/debugging-guide/" class="md-nav__link">
+      <a href="../../debugging/debugging-guide/" class="md-nav__link">
         
   
   
@@ -1733,7 +1748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/tech-debt/tech-debt/" class="md-nav__link">
+      <a href="../../tech-debt/tech-debt/" class="md-nav__link">
         
   
   
@@ -1804,7 +1819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../business-logic/overview/" class="md-nav__link">
+      <a href="../../../business-logic/overview/" class="md-nav__link">
         
   
   
@@ -1827,7 +1842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../business-logic/frontend/" class="md-nav__link">
+      <a href="../../../business-logic/frontend/" class="md-nav__link">
         
   
   
@@ -1850,7 +1865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../business-logic/backend/" class="md-nav__link">
+      <a href="../../../business-logic/backend/" class="md-nav__link">
         
   
   
@@ -1921,7 +1936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges/overview/" class="md-nav__link">
+      <a href="../../../challenges/overview/" class="md-nav__link">
         
   
   
@@ -1944,7 +1959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges/permission-based/" class="md-nav__link">
+      <a href="../../../challenges/permission-based/" class="md-nav__link">
         
   
   
@@ -1967,7 +1982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges/refresh-token/" class="md-nav__link">
+      <a href="../../../challenges/refresh-token/" class="md-nav__link">
         
   
   
@@ -1990,7 +2005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges/real-time-update/" class="md-nav__link">
+      <a href="../../../challenges/real-time-update/" class="md-nav__link">
         
   
   
@@ -2013,7 +2028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges/refetch-in-rtk-query/" class="md-nav__link">
+      <a href="../../../challenges/refetch-in-rtk-query/" class="md-nav__link">
         
   
   
@@ -2036,7 +2051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges/token-monitor/" class="md-nav__link">
+      <a href="../../../challenges/token-monitor/" class="md-nav__link">
         
   
   
@@ -2059,7 +2074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges/dynamic-favicon/" class="md-nav__link">
+      <a href="../../../challenges/dynamic-favicon/" class="md-nav__link">
         
   
   
@@ -2082,7 +2097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../challenges/multiple-id-status-tracker-polling/" class="md-nav__link">
+      <a href="../../../challenges/multiple-id-status-tracker-polling/" class="md-nav__link">
         
   
   
@@ -2153,7 +2168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/overview/" class="md-nav__link">
+      <a href="../../../security/overview/" class="md-nav__link">
         
   
   
@@ -2224,7 +2239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../micro-frontends/introduction/" class="md-nav__link">
+      <a href="../../../micro-frontends/introduction/" class="md-nav__link">
         
   
   
@@ -2247,7 +2262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../micro-frontends/module-federation/" class="md-nav__link">
+      <a href="../../../micro-frontends/module-federation/" class="md-nav__link">
         
   
   
@@ -2270,7 +2285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../micro-frontends/shared-state/" class="md-nav__link">
+      <a href="../../../micro-frontends/shared-state/" class="md-nav__link">
         
   
   
@@ -2293,7 +2308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../micro-frontends/deployment-strategies/" class="md-nav__link">
+      <a href="../../../micro-frontends/deployment-strategies/" class="md-nav__link">
         
   
   
@@ -2316,7 +2331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../micro-frontends/best-approach/" class="md-nav__link">
+      <a href="../../../micro-frontends/best-approach/" class="md-nav__link">
         
   
   
@@ -2339,7 +2354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../micro-frontends/detailed-guide/" class="md-nav__link">
+      <a href="../../../micro-frontends/detailed-guide/" class="md-nav__link">
         
   
   
@@ -2410,7 +2425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/ci-cd/" class="md-nav__link">
+      <a href="../../../deployment/ci-cd/" class="md-nav__link">
         
   
   
@@ -2433,7 +2448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/environment-variables/" class="md-nav__link">
+      <a href="../../../deployment/environment-variables/" class="md-nav__link">
         
   
   
@@ -2456,7 +2471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/vercel/" class="md-nav__link">
+      <a href="../../../deployment/vercel/" class="md-nav__link">
         
   
   
@@ -2479,7 +2494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/netlify/" class="md-nav__link">
+      <a href="../../../deployment/netlify/" class="md-nav__link">
         
   
   
@@ -2502,7 +2517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/docker/" class="md-nav__link">
+      <a href="../../../deployment/docker/" class="md-nav__link">
         
   
   
@@ -2525,7 +2540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/micro-frontend-deployment/" class="md-nav__link">
+      <a href="../../../deployment/micro-frontend-deployment/" class="md-nav__link">
         
   
   
@@ -2589,7 +2604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/solved/intro/" class="md-nav__link">
+      <a href="../../../deployment/solved/intro/" class="md-nav__link">
         
   
   
@@ -2612,7 +2627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/solved/refreshing-issue/" class="md-nav__link">
+      <a href="../../../deployment/solved/refreshing-issue/" class="md-nav__link">
         
   
   
@@ -2635,7 +2650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/solved/refresh-reloading-react/" class="md-nav__link">
+      <a href="../../../deployment/solved/refresh-reloading-react/" class="md-nav__link">
         
   
   
@@ -2683,6 +2698,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2691,27 +2708,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nx-vs-turborepo" class="md-nav__link">
+  <a href="#direction" class="md-nav__link">
     <span class="md-ellipsis">
-      NX vs Turborepo
+      Direction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#recommendation" class="md-nav__link">
+  <a href="#using-the-sun" class="md-nav__link">
     <span class="md-ellipsis">
-      Recommendation
+      🌞 Using the Sun
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#in-summary" class="md-nav__link">
+  <a href="#books" class="md-nav__link">
     <span class="md-ellipsis">
-      In Summary
+      Books
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
     </span>
   </a>
   
@@ -2733,55 +2759,106 @@
 
 
 
-  <h1>Overview</h1>
-
-<div class="grid cards">
+<h1 id="overview">Overview</h1>
+<blockquote>
+<p>Quotes</p>
+</blockquote>
+<p>By the early 90s, it was becoming clear that the success of a project involved more than just following software engineering guidance. There were too many disruptions and unpredicted changes in the market, causing the systems to become difficult to maintain, even when all the technical best practices were observed.</p>
+<p>That is when the concept of "software architecture" came into focus, proposing an <mark>even higher level of abstraction for the orchestration</mark> of the software development.</p>
 <ul>
-<li>🔲 <a href="../nx/setup/">NX</a></li>
-<li>🚀 <a href="../turborepo/setup/">Turborepo</a></li>
-<li>📦 <a href="../lerna/intro/">Lerna</a></li>
+<li><a href="">Professional Frontend Architecture by Fabio Nolasco, pg: 13</a></li>
 </ul>
-</div>
 <hr />
+<h2 id="direction">Direction</h2>
+<p>The Sun <strong>rises in the east</strong> and <strong>sets in the west</strong>. Here's a quick breakdown:</p>
 <ul>
-<li><strong>NX</strong> (🔲): A powerful tool for managing monorepos with integrated build and task running.</li>
-<li><strong>Turborepo</strong> (🚀): Optimized for fast builds and caching in large-scale frontend and backend projects.</li>
-<li><strong>Lerna</strong> (📦): A simpler tool for managing multiple JavaScript packages in a monorepo.</li>
+<li>🌅 <strong>Sunrise</strong>: East</li>
+<li>🌇 <strong>Sunset</strong>: West</li>
 </ul>
-<details class="success" open="open">
-<summary>Summary</summary>
+<p>However, this is a general rule. The exact position of sunrise and sunset <strong>shifts slightly north or south</strong> depending on the <strong>time of year</strong> and your <strong>location</strong> on Earth:</p>
 <ul>
-<li><strong>NX</strong> (🔲): A powerful monorepo management tool with extensive features for frontend and backend development.</li>
-<li><strong>Turborepo</strong> (🚀): Focuses on <strong>build performance</strong>, caching, and task parallelization in large-scale projects.</li>
-<li><strong>Lerna</strong> (📦): Simpler tool for managing packages in a monorepo with automatic versioning and publishing.</li>
+<li>Around the <strong>equinoxes</strong> (March 21 and September 23), the Sun rises <strong>exactly in the east</strong> and sets <strong>exactly in the west</strong>.</li>
+<li>In <strong>summer</strong> (Northern Hemisphere), the Sun rises <strong>northeast</strong> and sets <strong>northwest</strong>.</li>
+<li>In <strong>winter</strong>, it rises <strong>southeast</strong> and sets <strong>southwest</strong>.</li>
 </ul>
-</details>
+<p>If you're curious about the exact direction for your location today, I can look that up for you. Just let me know your city or region!</p>
 <hr />
-<h2 id="nx-vs-turborepo">NX vs Turborepo</h2>
+<p>east west north south. how to know if the direction.</p>
+<p>Great question! Knowing directions—east, west, north, south—is super useful. Here are several easy ways to figure out directions, whether you're outside or indoors:</p>
+<h2 id="using-the-sun">🌞 Using the Sun</h2>
+<blockquote>
+<p>Daytime method:</p>
+</blockquote>
 <ul>
-<li>
-<p><strong>NX</strong> is more focused on managing a <code>monorepo</code> for multiple applications and libraries, with a strong emphasis on scalability and modularity. It's an excellent choice for building a <mark>micro-frontend architecture</mark>.</p>
-</li>
-<li>
-<p><strong>Turborepo</strong> is also a <code>monorepo</code> tool, but it is more focused on <mark>build caching</mark> and <mark>task running</mark> across the repository. It is lightweight and can be used with different frontend frameworks, but <strong>NX</strong> has more built-in features specifically for micro-frontend development, such as code generation, dependency graph, and modular architecture.</p>
-</li>
+<li><strong>Morning (sunrise)</strong>: Face the rising Sun — you're facing <strong>east</strong>.</li>
+<li><strong>Evening (sunset)</strong>: Face the setting Sun — you're facing <strong>west</strong>.</li>
+<li>Once you're facing east or west:</li>
+<li>East on your front → <strong>North is to your left, South is to your right</strong>.</li>
+<li>West on your front → <strong>North is to your right, South is to your left</strong>.</li>
 </ul>
-<h2 id="recommendation">Recommendation</h2>
+<blockquote>
+<p>🧭 Using a Traditional Compass</p>
+</blockquote>
 <ul>
+<li>A magnetic compass always points to <strong>magnetic north</strong>.</li>
 <li>
-<p><strong>If you’re working on a large frontend application with micro-frontends</strong>, and you want robust tools for managing apps, libraries, and shared code in a monorepo, <code>NX</code> is a great choice.</p>
+<p>From there, you can find all other directions:</p>
 </li>
 <li>
-<p><strong>Turborepo</strong> can be a good option if your focus is on optimizing build and task running performance, but NX will provide you with more out-of-the-box support for structuring your frontend architecture.</p>
+<p>North (N)</p>
 </li>
+<li>East (E) – 90°</li>
+<li>South (S) – 180°</li>
+<li>West (W) – 270°</li>
 </ul>
-<h2 id="in-summary">In Summary</h2>
+<hr />
+<p>🌞 घाम हेरेर दिशा पहिचान गर्ने तरिका:</p>
+<blockquote>
+<p>बिहान:</p>
+</blockquote>
 <ul>
+<li>बिहान घाम जहाँबाट निस्कन्छ, त्यो हो <strong>पूर्व (East)</strong>।</li>
+<li>घामलाई हेरेर सीधा उभिनुहोस् भने:</li>
+<li>तपाईको अगाडि पूर्व हुन्छ,</li>
+<li><strong>दायाँपट्टि दक्षिण, बायाँपट्टि उत्तर, पछाडि पश्चिम</strong>।</li>
+</ul>
+<blockquote>
+<p>साँझ:</p>
+</blockquote>
+<ul>
+<li>साँझ घाम जहाँ अस्ताउँछ, त्यो हो <strong>पश्चिम (West)</strong>।</li>
+<li>घामलाई हेरेर उभिँदा:</li>
+<li>अगाडि <strong>पश्चिम</strong>,</li>
+<li><strong>दायाँपट्टि उत्तर, बायाँपट्टि दक्षिण, पछाडि पूर्व</strong>।</li>
+</ul>
+<blockquote>
+<p>🧭 परम्परागत कम्पास (सुई घुम्ने यन्त्र):</p>
+</blockquote>
+<ul>
+<li>कम्पासको सुई सधैं <strong>उत्तर (North)</strong> तर्फ देखाउँछ।</li>
 <li>
-<p><strong>NX</strong> is the tool you should consider if you're looking to build and manage <mark>micro-frontends</mark> in a <code>monorepo</code> setup.</p>
+<p>त्यस आधारमा:</p>
 </li>
 <li>
-<p><strong>Turborepo</strong> is a great alternative if you need <mark>build optimization</mark> but prefer a simpler setup without as many pre-configured features for micro-frontends.</p>
+<p><strong>पूर्व (East)</strong> — ९०°</p>
+</li>
+<li><strong>दक्षिण (South)</strong> — १८०°</li>
+<li><strong>पश्चिम (West)</strong> — २७०°</li>
+</ul>
+<hr />
+<h2 id="books">Books</h2>
+<p><img alt="Professional Frontend Architecture by Fabio Nolasco" src="../../../assets/books/61AK9-cX7DL._SY385_.jpg" /></p>
+<hr />
+<h2 id="reference">Reference</h2>
+<ul>
+<li>
+<p><a href="https://www.amazon.com/Professional-Front-end-Architecture-Front-End-Development/dp/1726146456">Professional Frontend Architecture by Fabio Nolasco</a></p>
+</li>
+<li>
+<p><a href="https://fabionolasco.com/">Fabio Nolasco</a></p>
+</li>
+<li>
+<p><a href="https://apiumhub.com/tech-blog-barcelona/reactive-architecture-benefits-use-cases/">Reactive architecture benefits &amp; use cases</a></p>
 </li>
 </ul>
 
@@ -2819,7 +2896,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../blog/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index">
+          <a href="../../guidelines/file-structure/" class="md-footer__link md-footer__link--prev" aria-label="Previous: File Structure">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2829,20 +2906,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Index
+                File Structure
               </div>
             </div>
           </a>
         
         
           
-          <a href="../nx/setup/" class="md-footer__link md-footer__link--next" aria-label="Next: Setup">
+          <a href="../feature-based/" class="md-footer__link md-footer__link--next" aria-label="Next: Feature Based">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Setup
+                Feature Based
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2882,10 +2959,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
