@@ -2740,6 +2740,116 @@ find an adequate balance between <strong>depth</strong> and <strong>breadth</str
 <li><a href="">Professional Frontend Architecture, pg: 11</a></li>
 </ul>
 <hr />
+<ul>
+<li><a href="https://martinfowler.com/bliki/PresentationDomainSeparation.html">Presentation Domain Separation: martinfowler.com</a></li>
+</ul>
+<p>One of the most useful design principles that I've found and followed is that of keeping a good separation between the presentation aspects of a program (the user interface) and the rest of the functionality. Over the years where I've seen this done, I've seen plenty of benefits:</p>
+<ul>
+<li><strong>Presentation logic</strong> and <strong>domain logic</strong> are easier to understand <mark>when separate</mark>.</li>
+<li>You can support multiple presentations on the same base program without duplicating code.</li>
+<li>User interfaces are hard to test, separation keeps more logic in more testable places.</li>
+<li>You can easily add a programmatic API for scripting or exposed as services (I actually see these as alternative presentations).</li>
+<li>Presentation code requires different skills and knowledge to domain code.</li>
+</ul>
+<p>This principle is the most prominent part of Model View Controller (MVC), indeed for many people MVC is how they describe this separation.</p>
+<hr />
+<ul>
+<li><a href="https://martinfowler.com/articles/modularizing-react-apps.html">Modularizing React Applications with Established UI Patterns</a></li>
+</ul>
+<hr />
+<ul>
+<li><a href="https://martinfowler.com/bliki/PresentationDomainDataLayering.html">Presentation Domain Data Layering</a></li>
+</ul>
+<p>One of the most common ways to modularize an information-rich program is to separate it into <mark>three broad layers</mark>: <strong>presentation (UI)</strong>, <strong>domain logic (aka business logic)</strong>, and <strong>data access</strong>. So you often see web applications divided into a web layer that knows about handling HTTP requests and rendering HTML, a business logic layer that contains validations and calculations, and a data access layer that sorts out how to manage persistent data in a database or remote services.</p>
+<p><img alt="Presentation Domain Data Layering" src="https://martinfowler.com/bliki/images/presentationDomainDataLayering/all_basic.png" /></p>
+<hr />
+<blockquote>
+<p>🌐 What Is a Design System?</p>
+</blockquote>
+<p>A <strong>Design System</strong> is a collection of reusable <strong>components, design tokens, patterns, and documentation</strong> that define the look, feel, and behavior of a user interface.</p>
+<blockquote>
+<p>🧱 Core Components of a React Design System</p>
+</blockquote>
+<ol>
+<li><strong>Design Tokens</strong></li>
+<li><strong>Component Library (React-based)</strong></li>
+<li><strong>Theming Support</strong></li>
+<li><strong>Layout Utilities</strong></li>
+<li><strong>Accessibility Standards</strong></li>
+<li><strong>Documentation Site (Style Guide)</strong></li>
+<li><strong>Testing Strategy</strong></li>
+</ol>
+<blockquote>
+<p>🧭 React Design System — System Relation Diagram (Text Visual)</p>
+</blockquote>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>                                      ┌──────────────────┐
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>                                      │     Figma / UX   │
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                                      │    (Design Ref)  │
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>                                      └────────▲─────────┘
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>                                               │
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>                                 ┌─────────────┴─────────────┐
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                                 │   Design Tokens (colors,  │
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                                 │   spacing, fonts, etc.)   │
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                                 └─────────────┬─────────────┘
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                                               │
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>                             ┌─────────────────┴──────────────────┐
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                             │                                    │
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>                   ┌─────────▼─────────┐                ┌─────────▼─────────┐
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                   │     Themes        │                │     Utilities     │
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                   │  (Light/Dark etc) │                │ (classNames, etc) │
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>                   └─────────┬─────────┘                └─────────┬─────────┘
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>                             │                                    │
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>                             ▼                                    ▼
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>                   ┌────────────────────┐             ┌────────────────────┐
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>                   │   Styled Components│             │     Layout System   │
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>                   │ (Button, Input...) │             │  (Grid, Flex, etc)  │
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>                   └─────────┬──────────┘             └─────────┬──────────┘
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>                             │                                  │
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>                             └────────────┬────────────┬────────┘
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>                                          ▼            ▼
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>                                 ┌──────────────────────────┐
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>                                 │   Component Library       │
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>                                 │  (React Components)       │
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>                                 └─────────┬────────────────┘
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>                                           │
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>             ┌─────────────────────────────┴─────────────────────────────┐
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>             ▼                                                           ▼
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>     ┌────────────────────┐                                   ┌────────────────────┐
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>     │ Storybook / Docs   │◄──── Visual, Dev &amp; UX Testing ────┤ Unit + Visual Tests │
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>     │ (MDX, Stories)     │                                   │ (Jest, Chromatic)   │
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>     └────────────────────┘                                   └────────────────────┘
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>                                           │
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>                                           ▼
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>                                 ┌────────────────────┐
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>                                 │  App / Consumer UI │
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>                                 │ (Product Teams)    │
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>                                 └────────────────────┘
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>                                           │
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>                                           ▼
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>                                 ┌────────────────────┐
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>                                 │ NPM Package Export │
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>                                 │ or Monorepo Shared │
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>                                 └────────────────────┘
+</span></code></pre></div>
+<blockquote>
+<p>🧪 Testing Layers</p>
+</blockquote>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>[Unit Tests] → Component logic, hooks, and utils
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>[Integration Tests] → Component + Theme/Token interaction
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>[Visual Tests] → Storybook snapshots or Chromatic
+</span></code></pre></div>
+<blockquote>
+<p>📦 Packaging/Distribution Flow</p>
+</blockquote>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>src/
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a> └─ components/
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>     └─ Button.tsx → exported in index.ts
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>                     ↓
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>                 Compiled via tsup/rollup
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>                     ↓
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>               Published to npm registry
+</span></code></pre></div>
+<hr />
 <details class="quote" open="open">
 <summary>Quote</summary>
 <ul>
